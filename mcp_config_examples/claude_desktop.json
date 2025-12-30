@@ -1,0 +1,15 @@
+{
+  "mcpServers": {
+    "youtube-orchestrator": {
+      "command": "python",
+      "args": ["-m", "mcp.youtube_mcp_server"],
+      "cwd": "/Users/urirozen/projects/youtube_library",
+      "env": {
+        "YT_API_KEY": "your_youtube_api_key_here",
+        "OPENAI_API_KEY": "your_openai_key_here_optional",
+        "OLLAMA_MODEL": "mistral",
+        "DEFAULT_OUTPUT": "./vault"
+      }
+    }
+  }
+}

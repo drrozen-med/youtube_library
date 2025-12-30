@@ -1,0 +1,30 @@
+# Optional: Multi-creator configuration
+# Use this to manage multiple YouTube channels in one run
+
+channels:
+  - handle: "@kurzgesagt"
+    alias: "Kurzgesagt"
+    limit: 100
+    sort: "date"
+    summarize: true
+  
+  - handle: "@AliAbdaal"
+    alias: "Ali Abdaal"
+    limit: 50
+    sort: "popular"
+    summarize: true
+    after: "2024-01-01"
+  
+  - handle: "@lexfridman"
+    alias: "Lex Fridman"
+    limit: 20
+    sort: "date"
+    min_duration: 3600  # Only long-form interviews (1+ hour)
+    summarize: true
+
+# Global defaults
+defaults:
+  output: "./vault"
+  summarize: false
+  skip_existing: true
+
