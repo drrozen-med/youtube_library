@@ -107,8 +107,30 @@ def _atomic_write_json(target: Path, obj: dict) -> None:
     """
     target.parent.mkdir(parents=True, exist_ok=True)
     temp = target.with_suffix(target.suffix + ".tmp")
+    
+    # Convert Pydantic HttpUrl and other non-serializable types to strings
+    def _serialize_value(v):
+        # Handle Pydantic HttpUrl type (has __str__ but not JSON serializable)
+        if hasattr(v, '__class__') and 'HttpUrl' in str(type(v)):
+            return str(v)
+        elif isinstance(v, dict):
+            return {k: _serialize_value(val) for k, val in v.items()}
+        elif isinstance(v, list):
+            return [_serialize_value(item) for item in v]
+        elif isinstance(v, (str, int, float, bool)) or v is None:
+            return v
+        else:
+            # Fallback: try to convert to string for other types
+            try:
+                json.dumps(v)  # Test if it's JSON serializable
+                return v
+            except (TypeError, ValueError):
+                return str(v)
+    
+    serialized = _serialize_value(obj)
+    
     with temp.open("w", encoding="utf-8") as f:
-        json.dump(obj, f, ensure_ascii=False, indent=2)
+        json.dump(serialized, f, ensure_ascii=False, indent=2)
         f.flush()
         os.fsync(f.fileno())
     # Atomic replace

@@ -37,6 +37,7 @@ from core import (
     build_index,
     summarize_transcript,
 )
+from core.transcript_fetcher import check_ip_block_status
 
 DEFAULT_VAULT = Path("./vault")
 
@@ -171,11 +172,18 @@ Examples:
     )
     
     # 4) Collect videos with filters
-    print(f"\n🎥 Fetching video list (limit={args.limit}, sort={args.sort})...")
+    # If processing newest first with a small limit, fetch more videos to ensure we get newest pending ones
+    # Otherwise the limit might only fetch videos that are already processed
+    fetch_limit = args.limit
+    if args.limit and args.limit < 50:
+        # Fetch at least 50 videos to ensure we get the newest pending ones
+        fetch_limit = 50
+        print(f"   Note: Fetching {fetch_limit} videos (instead of {args.limit}) to ensure newest pending videos are included")
+    print(f"\n🎥 Fetching video list (limit={fetch_limit or 'all'}, sort={args.sort})...")
     try:
         videos = collect_videos(
             channel_id=channel_id,
-            limit=args.limit,
+            limit=fetch_limit,
             sort=args.sort,
             after=args.after,
             before=args.before,
@@ -191,7 +199,23 @@ Examples:
     print(f"\n🔄 Syncing registry...")
     reg = sync_registry(chan_dir, videos)
     
-    # 6) Determine pending work
+    # 6) Check IP block status before processing
+    print(f"\n🔍 Checking IP block status...")
+    is_blocked, block_message = check_ip_block_status()
+    if is_blocked:
+        print(f"⚠️  IP is currently BLOCKED by YouTube!")
+        print(f"   Error: {block_message[:200]}...")
+        print(f"\n💡 Recommendation: Wait 1-2 hours before retrying.")
+        print(f"   The system will automatically retry with backoff, but it's better to wait.")
+        response = input("\nContinue anyway? (y/N): ").strip().lower()
+        if response != 'y':
+            print("Aborted. Please wait and try again later.")
+            sys.exit(1)
+        print("Continuing with automatic retry logic...")
+    else:
+        print(f"✅ IP is accessible - proceeding with downloads")
+    
+    # 7) Determine pending work
     pend = list_pending(chan_dir, need="transcript")
     
     if not pend:
@@ -201,19 +225,54 @@ Examples:
     
     print(f"\n📝 Found {len(pend)} videos needing transcripts.")
     
-    # Calculate next index number for filenames
-    transcripts_dir = chan_dir / "transcripts"
-    transcripts_dir.mkdir(exist_ok=True)
-    existing = sorted(transcripts_dir.glob("*.md"))
-    next_idx = len(existing) + 1
+    # Sort pending videos by published_at in DESCENDING order (newest first)
+    # This processes latest videos first, but indices are still assigned chronologically
+    pend_sorted = sorted(pend, key=lambda x: x.published_at, reverse=True)
     
-    # 7) Process queue
-    print(f"\n⚙️  Processing videos...")
-    for v in tqdm(pend, desc="Processing", unit="video"):
+    # Limit to newest N videos if user wants latest first
+    if args.limit and len(pend_sorted) > args.limit:
+        pend_sorted = pend_sorted[:args.limit]
+        print(f"   Limiting to newest {args.limit} videos (processing latest first)")
+    
+    # Get all videos (including already processed) to determine correct index numbers
+    reg = load_registry(chan_dir)
+    all_videos = sorted(reg.videos.values(), key=lambda x: x.published_at)
+    
+    # Create a mapping of video_id to chronological index
+    video_to_index = {}
+    for idx, video in enumerate(all_videos, start=1):
+        video_to_index[video.video_id] = idx
+    
+    # 8) Process queue (newest first, but numbered chronologically)
+    print(f"\n⚙️  Processing videos (newest first, numbered chronologically)...")
+    for v in tqdm(pend_sorted, desc="Processing", unit="video"):
         vid = v.video_id
         
-        # Fetch transcript
+        # Get chronological index for this video
+        idx = video_to_index.get(vid, len(all_videos) + 1)
+        
+        # Fetch transcript with detailed error logging
+        print(f"\n   Processing video {vid} (index {idx})...")
+        import logging
+        import sys
+        # Configure logging to show warnings/errors to stderr with full messages
+        handler = logging.StreamHandler(sys.stderr)
+        handler.setFormatter(logging.Formatter('   %(levelname)s: %(message)s'))
+        logger = logging.getLogger('core.transcript_fetcher')
+        logger.setLevel(logging.WARNING)
+        if not logger.handlers:  # Avoid duplicate handlers
+            logger.addHandler(handler)
+        
         text, source, lang = fetch_transcript_text(vid)
+        if text:
+            print(f"   ✓ Transcript fetched: source={source}, lang={lang}, length={len(text)} chars")
+        else:
+            print(f"   ✗ Transcript NOT available for {vid} (see warnings above for details)")
+            # Log the actual error - warnings should be visible
+            import logging
+            logging.basicConfig(level=logging.WARNING, format='%(levelname)s: %(message)s', force=True)
+            # Re-fetch with logging to see the error
+            text, source, lang = fetch_transcript_text(vid)
         
         if text:
             # Optional summarization
@@ -235,7 +294,16 @@ Examples:
                 "url": f"https://youtu.be/{v.video_id}",
             }
             
-            fpath = generate_markdown(chan_dir, next_idx, meta, text, summary=summary_text)
+            try:
+                fpath = generate_markdown(chan_dir, idx, meta, text, summary=summary_text)
+                print(f"\n   ✓ Created file: {fpath.name}")
+                if not fpath.exists():
+                    print(f"   ⚠️  WARNING: File was created but doesn't exist at {fpath}")
+            except Exception as e:
+                print(f"\n   ✗ ERROR creating markdown for video {vid} (index {idx}): {e}")
+                import traceback
+                traceback.print_exc()
+                continue  # Skip this video if file creation failed
             
             # Update registry
             update_status(
@@ -248,8 +316,6 @@ Examples:
                 transcript_language=lang,
                 path_md=str(fpath.relative_to(chan_dir))
             )
-            
-            next_idx += 1
         else:
             # Mark transcript attempt (unavailable)
             update_status(

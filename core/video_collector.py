@@ -19,7 +19,10 @@ import requests
 from dateutil import parser as dtparser
 import isodate
 
+from .auth_helper import make_authenticated_request, get_access_token
+
 YT_API_KEY = os.getenv("YT_API_KEY")
+SERVICE_ACCOUNT_PATH = os.getenv("GOOGLE_SERVICE_ACCOUNT_PATH")
 BASE = "https://www.googleapis.com/youtube/v3"
 
 
@@ -29,11 +32,21 @@ class YTError(RuntimeError):
 
 
 def _get(path: str, **params) -> dict:
-    """Make GET request to YouTube API."""
+    """Make GET request to YouTube API using service account or API key."""
+    url = f"{BASE}/{path}"
+    
+    # Prefer service account authentication
+    if SERVICE_ACCOUNT_PATH:
+        try:
+            return make_authenticated_request(url, params, SERVICE_ACCOUNT_PATH)
+        except Exception as e:
+            raise YTError(f"Service account auth failed: {e}")
+    
+    # Fallback to API key
     if not YT_API_KEY:
-        raise YTError("Missing YT_API_KEY in environment")
+        raise YTError("Missing YT_API_KEY or GOOGLE_SERVICE_ACCOUNT_PATH in environment")
     params["key"] = YT_API_KEY
-    r = requests.get(f"{BASE}/{path}", params=params, timeout=30)
+    r = requests.get(url, params=params, timeout=30)
     if r.status_code != 200:
         raise YTError(f"YT API error {r.status_code}: {r.text[:200]}")
     return r.json()

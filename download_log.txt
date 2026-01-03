@@ -1,0 +1,26 @@
+
+🔍 Resolving channel: https://www.youtube.com/@indydevdan
+
+✅ Resolved channel:
+   Title:       IndyDevDan
+   ID:          UC_x36zCEGilGpB1m-V4gmjg
+   Handle:      @@indydevdan
+   Subscribers: 105000
+   Videos:      177
+
+Proceed with this channel? [Y/n]: /Users/urirozen_m4/projects/NurseBridge-prep/apps/youtube_downloader/.venv/lib/python3.11/site-packages/pydantic/main.py:464: UserWarning: Pydantic serializer warnings:
+  PydanticSerializationUnexpectedValue(Expected `<class 'pydantic.networks.HttpUrl'>` but got `<class 'str'>` with value `'https://youtu.be/fop_yxV-mPo'` - serialized value may not be as expected.)
+  PydanticSerializationUnexpectedValue(Expected `<class 'pydantic.networks.HttpUrl'>` but got `<class 'str'>` with value `'https://youtu.be/u-SQ0Jsv4mI'` - serialized value may not be as expected.)
+  return self.__pydantic_serializer__.to_python(
+
+📋 Initializing registry at: vault/IndyDevDan
+
+🎥 Fetching video list (limit=200, sort=date)...
+   Found 176 videos matching filters.
+
+🔄 Syncing registry...
+
+📝 Found 174 videos needing transcripts.
+
+⚙️  Processing videos...
+Processing:   0%|          | 0/174 [00:00<?, ?video/s]Processing:   1%|          | 1/174 [00:01<04:29,  1.56s/video]Processing:   1%|          | 2/174 [00:02<03:48,  1.33s/video]Processing:   2%|▏         | 3/174 [00:03<03:30,  1.23s/video]Processing:   2%|▏         | 4/174 [00:05<03:32,  1.25s/video]Processing:   3%|▎         | 5/174 [00:06<03:22,  1.20s/video]Processing:   3%|▎         | 6/174 [00:07<03:20,  1.19s/video]Processing:   4%|▍         | 7/174 [00:08<03:30,  1.26s/video]Processing:   5%|▍         | 8/174 [00:09<03:24,  1.23s/video]Processing:   5%|▌         | 9/174 [00:11<03:23,  1.23s/video]Processing:   6%|▌         | 10/174 [00:12<03:11,  1.17s/video]Processing:   6%|▋         | 11/174 [00:14<04:24,  1.62s/video]Processing:   7%|▋         | 12/174 [00:17<04:49,  1.79s/video]Processing:   7%|▋         | 13/174 [00:19<05:07,  1.91s/video]Processing:   8%|▊         | 14/174 [00:20<04:29,  1.68s/video]Processing:   9%|▊         | 15/174 [00:22<04:51,  1.83s/video]Processing:   9%|▉         | 16/174 [00:25<05:42,  2.17s/video]Processing:  10%|▉         | 17/174 [00:27<05:44,  2.20s/video]Processing:  10%|█         | 18/174 [00:30<05:45,  2.21s/video]Processing:  11%|█         | 19/174 [00:32<05:49,  2.26s/video]Processing:  11%|█▏        | 20/174 [00:33<04:58,  1.94s/video]Processing:  12%|█▏        | 21/174 [00:34<04:20,  1.70s/video]Processing:  13%|█▎        | 22/174 [00:35<03:55,  1.55s/video]Processing:  13%|█▎        | 23/174 [00:37<03:42,  1.47s/video]Processing:  14%|█▍        | 24/174 [00:38<03:21,  1.34s/video]Processing:  14%|█▍        | 25/174 [00:40<04:14,  1.71s/video]Processing:  15%|█▍        | 26/174 [00:43<04:43,  1.91s/video]Processing:  16%|█▌        | 27/174 [00:45<05:04,  2.07s/video]Processing:  16%|█▌        | 28/174 [00:48<05:21,  2.20s/video]Processing:  17%|█▋        | 29/174 [00:50<05:16,  2.18s/video]Processing:  17%|█▋        | 30/174 [00:52<05:27,  2.27s/video]Processing:  18%|█▊        | 31/174 [00:55<05:28,  2.29s/video]Processing:  18%|█▊        | 32/174 [00:57<05:23,  2.28s/video]Processing:  19%|█▉        | 33/174 [01:00<05:49,  2.48s/video]Processing:  20%|█▉        | 34/174 [01:03<05:55,  2.54s/video]Processing:  20%|██        | 35/174 [01:04<04:51,  2.09s/video]Processing:  21%|██        | 36/174 [01:05<04:16,  1.86s/video]Processing:  21%|██▏       | 37/174 [01:06<03:43,  1.63s/video]Processing:  22%|██▏       | 38/174 [01:07<03:26,  1.52s/video]

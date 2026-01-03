@@ -14,7 +14,7 @@ Features:
 
 from pathlib import Path
 from typing import Dict, Optional
-from datetime import timedelta
+from datetime import timedelta, datetime
 
 from slugify import slugify
 
@@ -49,10 +49,25 @@ def generate_markdown(
     transcripts_dir = channel_dir / "transcripts"
     transcripts_dir.mkdir(parents=True, exist_ok=True)
     
-    # Create safe filename
+    # Parse published date and format as dd-mm-yyyy
+    date_str = ""
+    published_at = meta.get("published_at")
+    if published_at:
+        try:
+            # Parse ISO 8601 date (e.g., "2025-12-29T14:01:16Z")
+            dt = datetime.fromisoformat(published_at.replace("Z", "+00:00"))
+            date_str = dt.strftime("%d-%m-%Y")
+        except Exception:
+            # Fallback if date parsing fails
+            date_str = ""
+    
+    # Create safe filename: 001-dd-mm-yyyy-video-title.md
     title = meta.get("title", "") or meta["video_id"]
     safe = slugify(title)[:80] or meta["video_id"]
-    fname = f"{index_number:03d}-{safe}.md"
+    if date_str:
+        fname = f"{index_number:03d}-{date_str}-{safe}.md"
+    else:
+        fname = f"{index_number:03d}-{safe}.md"
     fpath = transcripts_dir / fname
     
     # Build YAML frontmatter

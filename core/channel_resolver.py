@@ -20,7 +20,10 @@ from typing import Optional, Tuple, Dict
 
 import requests
 
+from .auth_helper import make_authenticated_request
+
 YT_API_KEY = os.getenv("YT_API_KEY")
+SERVICE_ACCOUNT_PATH = os.getenv("GOOGLE_SERVICE_ACCOUNT_PATH")
 YT_API = "https://www.googleapis.com/youtube/v3"
 
 # Regex patterns
@@ -30,11 +33,21 @@ RE_HANDLE = re.compile(r"^@[\w\.-]{3,}$")
 
 
 def _api_get(path: str, **params) -> dict:
-    """Make a GET request to YouTube Data API."""
+    """Make a GET request to YouTube Data API using service account or API key."""
+    url = f"{YT_API}/{path}"
+    
+    # Prefer service account authentication
+    if SERVICE_ACCOUNT_PATH:
+        try:
+            return make_authenticated_request(url, params, SERVICE_ACCOUNT_PATH)
+        except Exception as e:
+            raise RuntimeError(f"Service account auth failed: {e}")
+    
+    # Fallback to API key
     if not YT_API_KEY:
-        raise RuntimeError("Missing YT_API_KEY in environment. Set it in .env file.")
+        raise RuntimeError("Missing YT_API_KEY or GOOGLE_SERVICE_ACCOUNT_PATH in environment. Set it in .env file.")
     params["key"] = YT_API_KEY
-    r = requests.get(f"{YT_API}/{path}", params=params, timeout=30)
+    r = requests.get(url, params=params, timeout=30)
     r.raise_for_status()
     return r.json()
 
