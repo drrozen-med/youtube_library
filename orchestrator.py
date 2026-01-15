@@ -21,7 +21,10 @@ import os
 import sys
 from pathlib import Path
 
+# Load environment variables BEFORE importing core modules
 from dotenv import load_dotenv
+load_dotenv()
+
 from tqdm import tqdm
 
 from core import (
@@ -50,9 +53,7 @@ def _confirm(prompt: str) -> bool:
 
 def main():
     import argparse
-    
-    load_dotenv()
-    
+
     parser = argparse.ArgumentParser(
         description="YouTube → Markdown Orchestrator (with MCP support)",
         formatter_class=argparse.RawDescriptionHelpFormatter,
@@ -130,6 +131,11 @@ Examples:
         action="store_true",
         help="Verbose output"
     )
+    parser.add_argument(
+        "--yes",
+        action="store_true",
+        help="Skip confirmation prompts"
+    )
     
     args = parser.parse_args()
     
@@ -153,7 +159,7 @@ Examples:
     print(f"   Subscribers: {subs}")
     print(f"   Videos:      {video_count}")
     
-    if not _confirm("\nProceed with this channel?"):
+    if not args.yes and not _confirm("\nProceed with this channel?"):
         print("Aborted.")
         sys.exit(1)
     
@@ -254,7 +260,6 @@ Examples:
         # Fetch transcript with detailed error logging
         print(f"\n   Processing video {vid} (index {idx})...")
         import logging
-        import sys
         # Configure logging to show warnings/errors to stderr with full messages
         handler = logging.StreamHandler(sys.stderr)
         handler.setFormatter(logging.Formatter('   %(levelname)s: %(message)s'))
@@ -269,7 +274,6 @@ Examples:
         else:
             print(f"   ✗ Transcript NOT available for {vid} (see warnings above for details)")
             # Log the actual error - warnings should be visible
-            import logging
             logging.basicConfig(level=logging.WARNING, format='%(levelname)s: %(message)s', force=True)
             # Re-fetch with logging to see the error
             text, source, lang = fetch_transcript_text(vid)

@@ -1,0 +1,68 @@
+[
+  {
+    "session_id": "6c893250-bd05-4e90-b458-038c6722a721",
+    "transcript_path": "/Users/urirozen_m4/.claude/projects/-Users-urirozen-m4-projects-NurseBridge-prep/6c893250-bd05-4e90-b458-038c6722a721.jsonl",
+    "cwd": "/Users/urirozen_m4/projects/NurseBridge-prep/apps/youtube_downloader",
+    "permission_mode": "bypassPermissions",
+    "hook_event_name": "PostToolUse",
+    "tool_name": "Bash",
+    "tool_input": {
+      "command": "grep -A 25 \"^class FreelancerProfile\" /Users/urirozen_m4/projects/NurseBridge-prep/shared/handlers/browser_control_and_automation/upwork_automation/upwork_models.py | head -30",
+      "description": "Check FreelancerProfile definition"
+    },
+    "tool_response": {
+      "stdout": "class FreelancerProfile:\n    \"\"\"\n    Freelancer profile information.\n\n    Contains extracted data from Upwork freelancer profiles\n    with computed properties for evaluation.\n\n    Attributes:\n        freelancer_id: Upwork freelancer unique identifier\n        name: Freelancer display name\n        title: Professional title or headline\n        location: Geographic location\n        hourly_rate: Hourly rate in USD (null if not set)\n        rating: Average rating (null if no ratings)\n        hours_worked: Total hours worked on Upwork\n        skills: List of skills\n        profile_url: URL to freelancer profile\n        hire_url: Direct hire URL (null if not available)\n\n    Examples:\n        >>> freelancer = FreelancerProfile(\n        ...     freelancer_id=\"~1234abcd\",\n        ...     name=\"Maria Santos\",\n        ...     title=\"RN | NCLEX Tutor\",\n        ...     location=\"Philippines\",\n        ...     hourly_rate=12.50,",
+      "stderr": "",
+      "interrupted": false,
+      "isImage": false
+    },
+    "tool_use_id": "call_01d8abbeff2a40a7a5538cf4"
+  },
+  {
+    "session_id": "6c893250-bd05-4e90-b458-038c6722a721",
+    "transcript_path": "/Users/urirozen_m4/.claude/projects/-Users-urirozen-m4-projects-NurseBridge-prep/6c893250-bd05-4e90-b458-038c6722a721.jsonl",
+    "cwd": "/Users/urirozen_m4/projects/NurseBridge-prep/apps/youtube_downloader",
+    "permission_mode": "bypassPermissions",
+    "hook_event_name": "PostToolUse",
+    "tool_name": "Edit",
+    "tool_input": {
+      "file_path": "/Users/urirozen_m4/projects/NurseBridge-prep/test_upwork_handler.py",
+      "old_string": "        # Test FreelancerProfile\n        freelancer = FreelancerProfile(\n            freelancer_id=\"~1234abcd\",\n            name=\"Test Freelancer\",\n            hourly_rate=10.0,\n            rating=4.8,\n            hours_worked=150,\n            skills=[\"nclex\", \"ielts\"]\n        )",
+      "new_string": "        # Test FreelancerProfile\n        freelancer = FreelancerProfile(\n            freelancer_id=\"~1234abcd\",\n            name=\"Test Freelancer\",\n            title=\"RN | NCLEX Tutor\",\n            location=\"Philippines\",\n            hourly_rate=10.0,\n            rating=4.8,\n            hours_worked=150,\n            skills=[\"nclex\", \"ielts\"],\n            profile_url=\"https://www.upwork.com/freelancers/~1234abcd\",\n            hire_url=\"https://www.upwork.com/hire/~1234abcd\"\n        )"
+    },
+    "tool_response": {
+      "filePath": "/Users/urirozen_m4/projects/NurseBridge-prep/test_upwork_handler.py",
+      "oldString": "        # Test FreelancerProfile\n        freelancer = FreelancerProfile(\n            freelancer_id=\"~1234abcd\",\n            name=\"Test Freelancer\",\n            hourly_rate=10.0,\n            rating=4.8,\n            hours_worked=150,\n            skills=[\"nclex\", \"ielts\"]\n        )",
+      "newString": "        # Test FreelancerProfile\n        freelancer = FreelancerProfile(\n            freelancer_id=\"~1234abcd\",\n            name=\"Test Freelancer\",\n            title=\"RN | NCLEX Tutor\",\n            location=\"Philippines\",\n            hourly_rate=10.0,\n            rating=4.8,\n            hours_worked=150,\n            skills=[\"nclex\", \"ielts\"],\n            profile_url=\"https://www.upwork.com/freelancers/~1234abcd\",\n            hire_url=\"https://www.upwork.com/hire/~1234abcd\"\n        )",
+      "originalFile": "#!/usr/bin/env python3\n\"\"\"\nTest the UpworkHandler system for Rafael.\nThis verifies that the new structured automation API works correctly.\n\"\"\"\nimport asyncio\nimport sys\nfrom pathlib import Path\n\n# Add the UpworkHandler to the path\nupwork_handler_path = Path(__file__).parent / \"shared\" / \"handlers\" / \"browser_control_and_automation\" / \"upwork_automation\"\nsys.path.insert(0, str(upwork_handler_path))\n\nfrom upwork_client import UpworkClient\nfrom upwork_models import JobStats, TalentFilter, FreelancerProfile\n\n\nasync def test_imports():\n    \"\"\"Test 1: Verify all imports work\"\"\"\n    print(\"\ud83e\uddea Test 1: Verifying imports...\")\n    try:\n        assert UpworkClient is not None\n        assert JobStats is not None\n        assert TalentFilter is not None\n        assert FreelancerProfile is not None\n        print(\"  \u2705 All imports successful!\")\n        return True\n    except Exception as e:\n        print(f\"  \u274c Import failed: {e}\")\n        return False\n\n\nasync def test_data_models():\n    \"\"\"Test 2: Verify data models work\"\"\"\n    print(\"\\n\ud83e\uddea Test 2: Testing data models...\")\n    try:\n        # Test JobStats\n        stats = JobStats(\n            job_id=\"test123\",\n            title=\"Test Job\",\n            url=\"https://www.upwork.com/jobs/test123\",\n            invites_sent=30,\n            interviews=3,\n            pending_offers=1,\n            active_contracts=0\n        )\n        assert stats.conversion_rate == 10.0  # 3/30 = 10%\n        print(f\"  \u2705 JobStats: {stats.conversion_rate}% conversion rate\")\n\n        # Test TalentFilter\n        filters = TalentFilter(\n            location=\"Philippines\",\n            skills=[\"nclex\", \"ielts\"],\n            hourly_rate_min=5,\n            hourly_rate_max=15,\n            top_rated_only=True\n        )\n        url_params = filters.to_url_params()\n        print(f\"  \u2705 TalentFilter: {url_params}\")\n\n        # Test FreelancerProfile\n        freelancer = FreelancerProfile(\n            freelancer_id=\"~1234abcd\",\n            name=\"Test Freelancer\",\n            hourly_rate=10.0,\n            rating=4.8,\n            hours_worked=150,\n            skills=[\"nclex\", \"ielts\"]\n        )\n        assert freelancer.is_top_rated == True\n        assert freelancer.matches_criteria(min_rating=4.5, min_hours=100) == True\n        print(f\"  \u2705 FreelancerProfile: {freelancer.name} is Top Rated: {freelancer.is_top_rated}\")\n\n        print(\"  \u2705 All data models work correctly!\")\n        return True\n    except Exception as e:\n        print(f\"  \u274c Data model test failed: {e}\")\n        import traceback\n        traceback.print_exc()\n        return False\n\n\nasync def test_client_initialization():\n    \"\"\"Test 3: Verify UpworkClient can be instantiated\"\"\"\n    print(\"\\n\ud83e\uddea Test 3: Testing UpworkClient instantiation...\")\n    try:\n        # Test basic instantiation (without starting browser)\n        client = UpworkClient()\n        print(\"  \u2705 UpworkClient instantiated successfully!\")\n        return True\n    except Exception as e:\n        print(f\"  \u274c Instantiation failed: {e}\")\n        import traceback\n        traceback.print_exc()\n        return False\n\n\nasync def main():\n    \"\"\"Run all tests\"\"\"\n    print(\"=\" * 60)\n    print(\"\ud83d\ude80 UpworkHandler Test Suite for Rafael\")\n    print(\"=\" * 60)\n\n    results = []\n\n    # Run tests\n    results.append(await test_imports())\n    results.append(await test_data_models())\n    results.append(await test_client_initialization())\n\n    # Summary\n    print(\"\\n\" + \"=\" * 60)\n    print(\"\ud83d\udcca Test Summary\")\n    print(\"=\" * 60)\n    passed = sum(results)\n    total = len(results)\n    print(f\"Passed: {passed}/{total}\")\n\n    if passed == total:\n        print(\"\\n\ud83c\udf89 All tests passed! UpworkHandler is ready to use!\")\n        print(\"\\n\ud83d\udcd6 Quick Start:\")\n        print(\"```python\")\n        print(\"import asyncio\")\n        print(\"from shared.handlers.browser_control_and_automation.upwork_automation import UpworkClient\")\n        print()\n        print(\"async def main():\")\n        print(\"    async with await UpworkClient.start_session() as client:\")\n        print(\"        result = await client.invite_freelancers('JOB_ID', max_invites=30)\")\n        print(\"        print(f'\u2705 Sent {result.sent_count} invitations')\")\n        print()\n        print(\"asyncio.run(main())\")\n        print(\"```\")\n        return 0\n    else:\n        print(\"\\n\u274c Some tests failed. Please check the errors above.\")\n        return 1\n\n\nif __name__ == \"__main__\":\n    exit_code = asyncio.run(main())\n    sys.exit(exit_code)\n",
+      "structuredPatch": [
+        {
+          "oldStart": 62,
+          "oldLines": 10,
+          "newStart": 62,
+          "newLines": 14,
+          "lines": [
+            "         freelancer = FreelancerProfile(",
+            "             freelancer_id=\"~1234abcd\",",
+            "             name=\"Test Freelancer\",",
+            "+            title=\"RN | NCLEX Tutor\",",
+            "+            location=\"Philippines\",",
+            "             hourly_rate=10.0,",
+            "             rating=4.8,",
+            "             hours_worked=150,",
+            "-            skills=[\"nclex\", \"ielts\"]",
+            "+            skills=[\"nclex\", \"ielts\"],",
+            "+            profile_url=\"https://www.upwork.com/freelancers/~1234abcd\",",
+            "+            hire_url=\"https://www.upwork.com/hire/~1234abcd\"",
+            "         )",
+            "         assert freelancer.is_top_rated == True",
+            "         assert freelancer.matches_criteria(min_rating=4.5, min_hours=100) == True"
+          ]
+        }
+      ],
+      "userModified": false,
+      "replaceAll": false
+    },
+    "tool_use_id": "call_c935112ff8b947d393588fac"
+  }
+]

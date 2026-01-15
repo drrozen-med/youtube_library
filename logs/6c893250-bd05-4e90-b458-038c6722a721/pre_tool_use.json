@@ -1,0 +1,43 @@
+[
+  {
+    "session_id": "6c893250-bd05-4e90-b458-038c6722a721",
+    "transcript_path": "/Users/urirozen_m4/.claude/projects/-Users-urirozen-m4-projects-NurseBridge-prep/6c893250-bd05-4e90-b458-038c6722a721.jsonl",
+    "cwd": "/Users/urirozen_m4/projects/NurseBridge-prep/apps/youtube_downloader",
+    "permission_mode": "bypassPermissions",
+    "hook_event_name": "PreToolUse",
+    "tool_name": "Bash",
+    "tool_input": {
+      "command": "grep -A 25 \"^class FreelancerProfile\" /Users/urirozen_m4/projects/NurseBridge-prep/shared/handlers/browser_control_and_automation/upwork_automation/upwork_models.py | head -30",
+      "description": "Check FreelancerProfile definition"
+    },
+    "tool_use_id": "call_01d8abbeff2a40a7a5538cf4"
+  },
+  {
+    "session_id": "6c893250-bd05-4e90-b458-038c6722a721",
+    "transcript_path": "/Users/urirozen_m4/.claude/projects/-Users-urirozen-m4-projects-NurseBridge-prep/6c893250-bd05-4e90-b458-038c6722a721.jsonl",
+    "cwd": "/Users/urirozen_m4/projects/NurseBridge-prep/apps/youtube_downloader",
+    "permission_mode": "bypassPermissions",
+    "hook_event_name": "PreToolUse",
+    "tool_name": "Edit",
+    "tool_input": {
+      "file_path": "/Users/urirozen_m4/projects/NurseBridge-prep/test_upwork_handler.py",
+      "old_string": "        # Test FreelancerProfile\n        freelancer = FreelancerProfile(\n            freelancer_id=\"~1234abcd\",\n            name=\"Test Freelancer\",\n            hourly_rate=10.0,\n            rating=4.8,\n            hours_worked=150,\n            skills=[\"nclex\", \"ielts\"]\n        )",
+      "new_string": "        # Test FreelancerProfile\n        freelancer = FreelancerProfile(\n            freelancer_id=\"~1234abcd\",\n            name=\"Test Freelancer\",\n            title=\"RN | NCLEX Tutor\",\n            location=\"Philippines\",\n            hourly_rate=10.0,\n            rating=4.8,\n            hours_worked=150,\n            skills=[\"nclex\", \"ielts\"],\n            profile_url=\"https://www.upwork.com/freelancers/~1234abcd\",\n            hire_url=\"https://www.upwork.com/hire/~1234abcd\"\n        )"
+    },
+    "tool_use_id": "call_c935112ff8b947d393588fac"
+  },
+  {
+    "session_id": "6c893250-bd05-4e90-b458-038c6722a721",
+    "transcript_path": "/Users/urirozen_m4/.claude/projects/-Users-urirozen-m4-projects-NurseBridge-prep/6c893250-bd05-4e90-b458-038c6722a721.jsonl",
+    "cwd": "/Users/urirozen_m4/projects/NurseBridge-prep/apps/youtube_downloader",
+    "permission_mode": "bypassPermissions",
+    "hook_event_name": "PreToolUse",
+    "tool_name": "Bash",
+    "tool_input": {
+      "command": "cd /Users/urirozen_m4/projects/NurseBridge-prep && python3 test_upwork_handler.py",
+      "timeout": 120000,
+      "description": "Test UpworkHandler with all fixes"
+    },
+    "tool_use_id": "call_e17b16a30abc420dbe2be441"
+  }
+]

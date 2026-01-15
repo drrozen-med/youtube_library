@@ -1,0 +1,1460 @@
+[
+  {
+    "timestamp": "2026-01-03T19:41:31.188379",
+    "input_data": {
+      "session_id": "0bf77ac9-0b22-44f0-a2c6-0e1c8c9ecc47",
+      "transcript_path": "/Users/urirozen_m4/.claude/projects/-Users-urirozen-m4-projects-NurseBridge-prep/0bf77ac9-0b22-44f0-a2c6-0e1c8c9ecc47.jsonl",
+      "cwd": "/Users/urirozen_m4/projects/NurseBridge-prep/apps/youtube_downloader",
+      "model": {
+        "id": "glm-4.6",
+        "display_name": "glm-4.6"
+      },
+      "workspace": {
+        "current_dir": "/Users/urirozen_m4/projects/NurseBridge-prep/apps/youtube_downloader",
+        "project_dir": "/Users/urirozen_m4/projects/NurseBridge-prep"
+      },
+      "version": "2.0.76",
+      "output_style": {
+        "name": "default"
+      },
+      "cost": {
+        "total_cost_usd": 92.8604913000002,
+        "total_duration_ms": 130717644,
+        "total_api_duration_ms": 19253315,
+        "total_lines_added": 29909,
+        "total_lines_removed": 2336
+      },
+      "context_window": {
+        "total_input_tokens": 13778817,
+        "total_output_tokens": 702944,
+        "context_window_size": 200000,
+        "current_usage": {
+          "input_tokens": 130555,
+          "output_tokens": 123,
+          "cache_creation_input_tokens": 0,
+          "cache_read_input_tokens": 19001
+        }
+      },
+      "exceeds_200k_tokens": false
+    },
+    "status_line_output": "[glm-4.6] \ud83d\udcad No session data",
+    "error": "Session file .claude/data/sessions/0bf77ac9-0b22-44f0-a2c6-0e1c8c9ecc47.json does not exist"
+  },
+  {
+    "timestamp": "2026-01-03T19:41:31.188876",
+    "input_data": {
+      "session_id": "0bf77ac9-0b22-44f0-a2c6-0e1c8c9ecc47",
+      "transcript_path": "/Users/urirozen_m4/.claude/projects/-Users-urirozen-m4-projects-NurseBridge-prep/0bf77ac9-0b22-44f0-a2c6-0e1c8c9ecc47.jsonl",
+      "cwd": "/Users/urirozen_m4/projects/NurseBridge-prep/apps/youtube_downloader",
+      "model": {
+        "id": "glm-4.6",
+        "display_name": "glm-4.6"
+      },
+      "workspace": {
+        "current_dir": "/Users/urirozen_m4/projects/NurseBridge-prep/apps/youtube_downloader",
+        "project_dir": "/Users/urirozen_m4/projects/NurseBridge-prep"
+      },
+      "version": "2.0.76",
+      "output_style": {
+        "name": "default"
+      },
+      "cost": {
+        "total_cost_usd": 92.8604913000002,
+        "total_duration_ms": 130717644,
+        "total_api_duration_ms": 19253315,
+        "total_lines_added": 29909,
+        "total_lines_removed": 2336
+      },
+      "context_window": {
+        "total_input_tokens": 13778817,
+        "total_output_tokens": 702944,
+        "context_window_size": 200000,
+        "current_usage": {
+          "input_tokens": 130555,
+          "output_tokens": 123,
+          "cache_creation_input_tokens": 0,
+          "cache_read_input_tokens": 19001
+        }
+      },
+      "exceeds_200k_tokens": false
+    },
+    "status_line_output": "\u001b[36m[glm-4.6]\u001b[0m \u001b[90m\ud83d\udcad No session data\u001b[0m"
+  },
+  {
+    "timestamp": "2026-01-03T19:43:53.307778",
+    "input_data": {
+      "session_id": "0bf77ac9-0b22-44f0-a2c6-0e1c8c9ecc47",
+      "transcript_path": "/Users/urirozen_m4/.claude/projects/-Users-urirozen-m4-projects-NurseBridge-prep/0bf77ac9-0b22-44f0-a2c6-0e1c8c9ecc47.jsonl",
+      "cwd": "/Users/urirozen_m4/projects/NurseBridge-prep/apps/youtube_downloader",
+      "model": {
+        "id": "glm-4.6",
+        "display_name": "glm-4.6"
+      },
+      "workspace": {
+        "current_dir": "/Users/urirozen_m4/projects/NurseBridge-prep/apps/youtube_downloader",
+        "project_dir": "/Users/urirozen_m4/projects/NurseBridge-prep"
+      },
+      "version": "2.0.76",
+      "output_style": {
+        "name": "default"
+      },
+      "cost": {
+        "total_cost_usd": 92.92229040000021,
+        "total_duration_ms": 130859748,
+        "total_api_duration_ms": 19267003,
+        "total_lines_added": 29909,
+        "total_lines_removed": 2336
+      },
+      "context_window": {
+        "total_input_tokens": 13782524,
+        "total_output_tokens": 703323,
+        "context_window_size": 200000,
+        "current_usage": {
+          "input_tokens": 1500,
+          "output_tokens": 257,
+          "cache_creation_input_tokens": 0,
+          "cache_read_input_tokens": 149555
+        }
+      },
+      "exceeds_200k_tokens": false
+    },
+    "status_line_output": "[glm-4.6] \ud83d\udcad No session data",
+    "error": "Session file .claude/data/sessions/0bf77ac9-0b22-44f0-a2c6-0e1c8c9ecc47.json does not exist"
+  },
+  {
+    "timestamp": "2026-01-03T19:43:53.308430",
+    "input_data": {
+      "session_id": "0bf77ac9-0b22-44f0-a2c6-0e1c8c9ecc47",
+      "transcript_path": "/Users/urirozen_m4/.claude/projects/-Users-urirozen-m4-projects-NurseBridge-prep/0bf77ac9-0b22-44f0-a2c6-0e1c8c9ecc47.jsonl",
+      "cwd": "/Users/urirozen_m4/projects/NurseBridge-prep/apps/youtube_downloader",
+      "model": {
+        "id": "glm-4.6",
+        "display_name": "glm-4.6"
+      },
+      "workspace": {
+        "current_dir": "/Users/urirozen_m4/projects/NurseBridge-prep/apps/youtube_downloader",
+        "project_dir": "/Users/urirozen_m4/projects/NurseBridge-prep"
+      },
+      "version": "2.0.76",
+      "output_style": {
+        "name": "default"
+      },
+      "cost": {
+        "total_cost_usd": 92.92229040000021,
+        "total_duration_ms": 130859748,
+        "total_api_duration_ms": 19267003,
+        "total_lines_added": 29909,
+        "total_lines_removed": 2336
+      },
+      "context_window": {
+        "total_input_tokens": 13782524,
+        "total_output_tokens": 703323,
+        "context_window_size": 200000,
+        "current_usage": {
+          "input_tokens": 1500,
+          "output_tokens": 257,
+          "cache_creation_input_tokens": 0,
+          "cache_read_input_tokens": 149555
+        }
+      },
+      "exceeds_200k_tokens": false
+    },
+    "status_line_output": "\u001b[36m[glm-4.6]\u001b[0m \u001b[90m\ud83d\udcad No session data\u001b[0m"
+  },
+  {
+    "timestamp": "2026-01-03T19:44:02.219199",
+    "input_data": {
+      "session_id": "0bf77ac9-0b22-44f0-a2c6-0e1c8c9ecc47",
+      "transcript_path": "/Users/urirozen_m4/.claude/projects/-Users-urirozen-m4-projects-NurseBridge-prep/0bf77ac9-0b22-44f0-a2c6-0e1c8c9ecc47.jsonl",
+      "cwd": "/Users/urirozen_m4/projects/NurseBridge-prep/apps/youtube_downloader",
+      "model": {
+        "id": "glm-4.6",
+        "display_name": "glm-4.6"
+      },
+      "workspace": {
+        "current_dir": "/Users/urirozen_m4/projects/NurseBridge-prep/apps/youtube_downloader",
+        "project_dir": "/Users/urirozen_m4/projects/NurseBridge-prep"
+      },
+      "version": "2.0.76",
+      "output_style": {
+        "name": "default"
+      },
+      "cost": {
+        "total_cost_usd": 92.97167010000021,
+        "total_duration_ms": 130868661,
+        "total_api_duration_ms": 19277367,
+        "total_lines_added": 29909,
+        "total_lines_removed": 2336
+      },
+      "context_window": {
+        "total_input_tokens": 13783346,
+        "total_output_tokens": 703421,
+        "context_window_size": 200000,
+        "current_usage": {
+          "input_tokens": 466,
+          "output_tokens": 58,
+          "cache_creation_input_tokens": 0,
+          "cache_read_input_tokens": 151054
+        }
+      },
+      "exceeds_200k_tokens": false
+    },
+    "status_line_output": "[glm-4.6] \ud83d\udcad No session data",
+    "error": "Session file .claude/data/sessions/0bf77ac9-0b22-44f0-a2c6-0e1c8c9ecc47.json does not exist"
+  },
+  {
+    "timestamp": "2026-01-03T19:44:02.219970",
+    "input_data": {
+      "session_id": "0bf77ac9-0b22-44f0-a2c6-0e1c8c9ecc47",
+      "transcript_path": "/Users/urirozen_m4/.claude/projects/-Users-urirozen-m4-projects-NurseBridge-prep/0bf77ac9-0b22-44f0-a2c6-0e1c8c9ecc47.jsonl",
+      "cwd": "/Users/urirozen_m4/projects/NurseBridge-prep/apps/youtube_downloader",
+      "model": {
+        "id": "glm-4.6",
+        "display_name": "glm-4.6"
+      },
+      "workspace": {
+        "current_dir": "/Users/urirozen_m4/projects/NurseBridge-prep/apps/youtube_downloader",
+        "project_dir": "/Users/urirozen_m4/projects/NurseBridge-prep"
+      },
+      "version": "2.0.76",
+      "output_style": {
+        "name": "default"
+      },
+      "cost": {
+        "total_cost_usd": 92.97167010000021,
+        "total_duration_ms": 130868661,
+        "total_api_duration_ms": 19277367,
+        "total_lines_added": 29909,
+        "total_lines_removed": 2336
+      },
+      "context_window": {
+        "total_input_tokens": 13783346,
+        "total_output_tokens": 703421,
+        "context_window_size": 200000,
+        "current_usage": {
+          "input_tokens": 466,
+          "output_tokens": 58,
+          "cache_creation_input_tokens": 0,
+          "cache_read_input_tokens": 151054
+        }
+      },
+      "exceeds_200k_tokens": false
+    },
+    "status_line_output": "\u001b[36m[glm-4.6]\u001b[0m \u001b[90m\ud83d\udcad No session data\u001b[0m"
+  },
+  {
+    "timestamp": "2026-01-03T19:44:13.277535",
+    "input_data": {
+      "session_id": "0bf77ac9-0b22-44f0-a2c6-0e1c8c9ecc47",
+      "transcript_path": "/Users/urirozen_m4/.claude/projects/-Users-urirozen-m4-projects-NurseBridge-prep/0bf77ac9-0b22-44f0-a2c6-0e1c8c9ecc47.jsonl",
+      "cwd": "/Users/urirozen_m4/projects/NurseBridge-prep/apps/youtube_downloader",
+      "model": {
+        "id": "glm-4.6",
+        "display_name": "glm-4.6"
+      },
+      "workspace": {
+        "current_dir": "/Users/urirozen_m4/projects/NurseBridge-prep/apps/youtube_downloader",
+        "project_dir": "/Users/urirozen_m4/projects/NurseBridge-prep"
+      },
+      "version": "2.0.76",
+      "output_style": {
+        "name": "default"
+      },
+      "cost": {
+        "total_cost_usd": 93.0220950000002,
+        "total_duration_ms": 130879213,
+        "total_api_duration_ms": 19289482,
+        "total_lines_added": 29909,
+        "total_lines_removed": 2336
+      },
+      "context_window": {
+        "total_input_tokens": 13784243,
+        "total_output_tokens": 703564,
+        "context_window_size": 200000,
+        "current_usage": {
+          "input_tokens": 700,
+          "output_tokens": 103,
+          "cache_creation_input_tokens": 0,
+          "cache_read_input_tokens": 151519
+        }
+      },
+      "exceeds_200k_tokens": false
+    },
+    "status_line_output": "[glm-4.6] \ud83d\udcad No session data",
+    "error": "Session file .claude/data/sessions/0bf77ac9-0b22-44f0-a2c6-0e1c8c9ecc47.json does not exist"
+  },
+  {
+    "timestamp": "2026-01-03T19:44:13.282082",
+    "input_data": {
+      "session_id": "0bf77ac9-0b22-44f0-a2c6-0e1c8c9ecc47",
+      "transcript_path": "/Users/urirozen_m4/.claude/projects/-Users-urirozen-m4-projects-NurseBridge-prep/0bf77ac9-0b22-44f0-a2c6-0e1c8c9ecc47.jsonl",
+      "cwd": "/Users/urirozen_m4/projects/NurseBridge-prep/apps/youtube_downloader",
+      "model": {
+        "id": "glm-4.6",
+        "display_name": "glm-4.6"
+      },
+      "workspace": {
+        "current_dir": "/Users/urirozen_m4/projects/NurseBridge-prep/apps/youtube_downloader",
+        "project_dir": "/Users/urirozen_m4/projects/NurseBridge-prep"
+      },
+      "version": "2.0.76",
+      "output_style": {
+        "name": "default"
+      },
+      "cost": {
+        "total_cost_usd": 93.0220950000002,
+        "total_duration_ms": 130879213,
+        "total_api_duration_ms": 19289482,
+        "total_lines_added": 29909,
+        "total_lines_removed": 2336
+      },
+      "context_window": {
+        "total_input_tokens": 13784243,
+        "total_output_tokens": 703564,
+        "context_window_size": 200000,
+        "current_usage": {
+          "input_tokens": 700,
+          "output_tokens": 103,
+          "cache_creation_input_tokens": 0,
+          "cache_read_input_tokens": 151519
+        }
+      },
+      "exceeds_200k_tokens": false
+    },
+    "status_line_output": "\u001b[36m[glm-4.6]\u001b[0m \u001b[90m\ud83d\udcad No session data\u001b[0m"
+  },
+  {
+    "timestamp": "2026-01-03T19:44:21.123450",
+    "input_data": {
+      "session_id": "0bf77ac9-0b22-44f0-a2c6-0e1c8c9ecc47",
+      "transcript_path": "/Users/urirozen_m4/.claude/projects/-Users-urirozen-m4-projects-NurseBridge-prep/0bf77ac9-0b22-44f0-a2c6-0e1c8c9ecc47.jsonl",
+      "cwd": "/Users/urirozen_m4/projects/NurseBridge-prep/apps/youtube_downloader",
+      "model": {
+        "id": "glm-4.6",
+        "display_name": "glm-4.6"
+      },
+      "workspace": {
+        "current_dir": "/Users/urirozen_m4/projects/NurseBridge-prep/apps/youtube_downloader",
+        "project_dir": "/Users/urirozen_m4/projects/NurseBridge-prep"
+      },
+      "version": "2.0.76",
+      "output_style": {
+        "name": "default"
+      },
+      "cost": {
+        "total_cost_usd": 93.0761103000002,
+        "total_duration_ms": 130887598,
+        "total_api_duration_ms": 19299729,
+        "total_lines_added": 29909,
+        "total_lines_removed": 2336
+      },
+      "context_window": {
+        "total_input_tokens": 13785804,
+        "total_output_tokens": 703800,
+        "context_window_size": 200000,
+        "current_usage": {
+          "input_tokens": 652,
+          "output_tokens": 149,
+          "cache_creation_input_tokens": 0,
+          "cache_read_input_tokens": 152218
+        }
+      },
+      "exceeds_200k_tokens": false
+    },
+    "status_line_output": "[glm-4.6] \ud83d\udcad No session data",
+    "error": "Session file .claude/data/sessions/0bf77ac9-0b22-44f0-a2c6-0e1c8c9ecc47.json does not exist"
+  },
+  {
+    "timestamp": "2026-01-03T19:44:21.124036",
+    "input_data": {
+      "session_id": "0bf77ac9-0b22-44f0-a2c6-0e1c8c9ecc47",
+      "transcript_path": "/Users/urirozen_m4/.claude/projects/-Users-urirozen-m4-projects-NurseBridge-prep/0bf77ac9-0b22-44f0-a2c6-0e1c8c9ecc47.jsonl",
+      "cwd": "/Users/urirozen_m4/projects/NurseBridge-prep/apps/youtube_downloader",
+      "model": {
+        "id": "glm-4.6",
+        "display_name": "glm-4.6"
+      },
+      "workspace": {
+        "current_dir": "/Users/urirozen_m4/projects/NurseBridge-prep/apps/youtube_downloader",
+        "project_dir": "/Users/urirozen_m4/projects/NurseBridge-prep"
+      },
+      "version": "2.0.76",
+      "output_style": {
+        "name": "default"
+      },
+      "cost": {
+        "total_cost_usd": 93.0761103000002,
+        "total_duration_ms": 130887598,
+        "total_api_duration_ms": 19299729,
+        "total_lines_added": 29909,
+        "total_lines_removed": 2336
+      },
+      "context_window": {
+        "total_input_tokens": 13785804,
+        "total_output_tokens": 703800,
+        "context_window_size": 200000,
+        "current_usage": {
+          "input_tokens": 652,
+          "output_tokens": 149,
+          "cache_creation_input_tokens": 0,
+          "cache_read_input_tokens": 152218
+        }
+      },
+      "exceeds_200k_tokens": false
+    },
+    "status_line_output": "\u001b[36m[glm-4.6]\u001b[0m \u001b[90m\ud83d\udcad No session data\u001b[0m"
+  },
+  {
+    "timestamp": "2026-01-03T19:44:32.556695",
+    "input_data": {
+      "session_id": "0bf77ac9-0b22-44f0-a2c6-0e1c8c9ecc47",
+      "transcript_path": "/Users/urirozen_m4/.claude/projects/-Users-urirozen-m4-projects-NurseBridge-prep/0bf77ac9-0b22-44f0-a2c6-0e1c8c9ecc47.jsonl",
+      "cwd": "/Users/urirozen_m4/projects/NurseBridge-prep/apps/youtube_downloader",
+      "model": {
+        "id": "glm-4.6",
+        "display_name": "glm-4.6"
+      },
+      "workspace": {
+        "current_dir": "/Users/urirozen_m4/projects/NurseBridge-prep/apps/youtube_downloader",
+        "project_dir": "/Users/urirozen_m4/projects/NurseBridge-prep"
+      },
+      "version": "2.0.76",
+      "output_style": {
+        "name": "default"
+      },
+      "cost": {
+        "total_cost_usd": 93.1297173000002,
+        "total_duration_ms": 130898886,
+        "total_api_duration_ms": 19312520,
+        "total_lines_added": 29909,
+        "total_lines_removed": 2336
+      },
+      "context_window": {
+        "total_input_tokens": 13786377,
+        "total_output_tokens": 704193,
+        "context_window_size": 200000,
+        "current_usage": {
+          "input_tokens": 296,
+          "output_tokens": 329,
+          "cache_creation_input_tokens": 0,
+          "cache_read_input_tokens": 152869
+        }
+      },
+      "exceeds_200k_tokens": false
+    },
+    "status_line_output": "[glm-4.6] \ud83d\udcad No session data",
+    "error": "Session file .claude/data/sessions/0bf77ac9-0b22-44f0-a2c6-0e1c8c9ecc47.json does not exist"
+  },
+  {
+    "timestamp": "2026-01-03T19:44:32.558815",
+    "input_data": {
+      "session_id": "0bf77ac9-0b22-44f0-a2c6-0e1c8c9ecc47",
+      "transcript_path": "/Users/urirozen_m4/.claude/projects/-Users-urirozen-m4-projects-NurseBridge-prep/0bf77ac9-0b22-44f0-a2c6-0e1c8c9ecc47.jsonl",
+      "cwd": "/Users/urirozen_m4/projects/NurseBridge-prep/apps/youtube_downloader",
+      "model": {
+        "id": "glm-4.6",
+        "display_name": "glm-4.6"
+      },
+      "workspace": {
+        "current_dir": "/Users/urirozen_m4/projects/NurseBridge-prep/apps/youtube_downloader",
+        "project_dir": "/Users/urirozen_m4/projects/NurseBridge-prep"
+      },
+      "version": "2.0.76",
+      "output_style": {
+        "name": "default"
+      },
+      "cost": {
+        "total_cost_usd": 93.1297173000002,
+        "total_duration_ms": 130898886,
+        "total_api_duration_ms": 19312520,
+        "total_lines_added": 29909,
+        "total_lines_removed": 2336
+      },
+      "context_window": {
+        "total_input_tokens": 13786377,
+        "total_output_tokens": 704193,
+        "context_window_size": 200000,
+        "current_usage": {
+          "input_tokens": 296,
+          "output_tokens": 329,
+          "cache_creation_input_tokens": 0,
+          "cache_read_input_tokens": 152869
+        }
+      },
+      "exceeds_200k_tokens": false
+    },
+    "status_line_output": "\u001b[36m[glm-4.6]\u001b[0m \u001b[90m\ud83d\udcad No session data\u001b[0m"
+  },
+  {
+    "timestamp": "2026-01-03T19:44:32.579712",
+    "input_data": {
+      "session_id": "0bf77ac9-0b22-44f0-a2c6-0e1c8c9ecc47",
+      "transcript_path": "/Users/urirozen_m4/.claude/projects/-Users-urirozen-m4-projects-NurseBridge-prep/0bf77ac9-0b22-44f0-a2c6-0e1c8c9ecc47.jsonl",
+      "cwd": "/Users/urirozen_m4/projects/NurseBridge-prep/apps/youtube_downloader",
+      "model": {
+        "id": "glm-4.6",
+        "display_name": "glm-4.6"
+      },
+      "workspace": {
+        "current_dir": "/Users/urirozen_m4/projects/NurseBridge-prep/apps/youtube_downloader",
+        "project_dir": "/Users/urirozen_m4/projects/NurseBridge-prep"
+      },
+      "version": "2.0.76",
+      "output_style": {
+        "name": "default"
+      },
+      "cost": {
+        "total_cost_usd": 93.1297173000002,
+        "total_duration_ms": 130898927,
+        "total_api_duration_ms": 19312520,
+        "total_lines_added": 29909,
+        "total_lines_removed": 2336
+      },
+      "context_window": {
+        "total_input_tokens": 13786377,
+        "total_output_tokens": 704193,
+        "context_window_size": 200000,
+        "current_usage": {
+          "input_tokens": 296,
+          "output_tokens": 329,
+          "cache_creation_input_tokens": 0,
+          "cache_read_input_tokens": 152869
+        }
+      },
+      "exceeds_200k_tokens": false
+    },
+    "status_line_output": "[glm-4.6] \ud83d\udcad No session data",
+    "error": "Session file .claude/data/sessions/0bf77ac9-0b22-44f0-a2c6-0e1c8c9ecc47.json does not exist"
+  },
+  {
+    "timestamp": "2026-01-03T19:44:32.580504",
+    "input_data": {
+      "session_id": "0bf77ac9-0b22-44f0-a2c6-0e1c8c9ecc47",
+      "transcript_path": "/Users/urirozen_m4/.claude/projects/-Users-urirozen-m4-projects-NurseBridge-prep/0bf77ac9-0b22-44f0-a2c6-0e1c8c9ecc47.jsonl",
+      "cwd": "/Users/urirozen_m4/projects/NurseBridge-prep/apps/youtube_downloader",
+      "model": {
+        "id": "glm-4.6",
+        "display_name": "glm-4.6"
+      },
+      "workspace": {
+        "current_dir": "/Users/urirozen_m4/projects/NurseBridge-prep/apps/youtube_downloader",
+        "project_dir": "/Users/urirozen_m4/projects/NurseBridge-prep"
+      },
+      "version": "2.0.76",
+      "output_style": {
+        "name": "default"
+      },
+      "cost": {
+        "total_cost_usd": 93.1297173000002,
+        "total_duration_ms": 130898927,
+        "total_api_duration_ms": 19312520,
+        "total_lines_added": 29909,
+        "total_lines_removed": 2336
+      },
+      "context_window": {
+        "total_input_tokens": 13786377,
+        "total_output_tokens": 704193,
+        "context_window_size": 200000,
+        "current_usage": {
+          "input_tokens": 296,
+          "output_tokens": 329,
+          "cache_creation_input_tokens": 0,
+          "cache_read_input_tokens": 152869
+        }
+      },
+      "exceeds_200k_tokens": false
+    },
+    "status_line_output": "\u001b[36m[glm-4.6]\u001b[0m \u001b[90m\ud83d\udcad No session data\u001b[0m"
+  },
+  {
+    "timestamp": "2026-01-03T19:44:41.691216",
+    "input_data": {
+      "session_id": "0bf77ac9-0b22-44f0-a2c6-0e1c8c9ecc47",
+      "transcript_path": "/Users/urirozen_m4/.claude/projects/-Users-urirozen-m4-projects-NurseBridge-prep/0bf77ac9-0b22-44f0-a2c6-0e1c8c9ecc47.jsonl",
+      "cwd": "/Users/urirozen_m4/projects/NurseBridge-prep/apps/youtube_downloader",
+      "model": {
+        "id": "glm-4.6",
+        "display_name": "glm-4.6"
+      },
+      "workspace": {
+        "current_dir": "/Users/urirozen_m4/projects/NurseBridge-prep/apps/youtube_downloader",
+        "project_dir": "/Users/urirozen_m4/projects/NurseBridge-prep"
+      },
+      "version": "2.0.76",
+      "output_style": {
+        "name": "default"
+      },
+      "cost": {
+        "total_cost_usd": 93.18480060000019,
+        "total_duration_ms": 130908174,
+        "total_api_duration_ms": 19323981,
+        "total_lines_added": 29909,
+        "total_lines_removed": 2336
+      },
+      "context_window": {
+        "total_input_tokens": 13788194,
+        "total_output_tokens": 704430,
+        "context_window_size": 200000,
+        "current_usage": {
+          "input_tokens": 1182,
+          "output_tokens": 150,
+          "cache_creation_input_tokens": 0,
+          "cache_read_input_tokens": 153164
+        }
+      },
+      "exceeds_200k_tokens": false
+    },
+    "status_line_output": "[glm-4.6] \ud83d\udcad No session data",
+    "error": "Session file .claude/data/sessions/0bf77ac9-0b22-44f0-a2c6-0e1c8c9ecc47.json does not exist"
+  },
+  {
+    "timestamp": "2026-01-03T19:44:41.692316",
+    "input_data": {
+      "session_id": "0bf77ac9-0b22-44f0-a2c6-0e1c8c9ecc47",
+      "transcript_path": "/Users/urirozen_m4/.claude/projects/-Users-urirozen-m4-projects-NurseBridge-prep/0bf77ac9-0b22-44f0-a2c6-0e1c8c9ecc47.jsonl",
+      "cwd": "/Users/urirozen_m4/projects/NurseBridge-prep/apps/youtube_downloader",
+      "model": {
+        "id": "glm-4.6",
+        "display_name": "glm-4.6"
+      },
+      "workspace": {
+        "current_dir": "/Users/urirozen_m4/projects/NurseBridge-prep/apps/youtube_downloader",
+        "project_dir": "/Users/urirozen_m4/projects/NurseBridge-prep"
+      },
+      "version": "2.0.76",
+      "output_style": {
+        "name": "default"
+      },
+      "cost": {
+        "total_cost_usd": 93.18480060000019,
+        "total_duration_ms": 130908174,
+        "total_api_duration_ms": 19323981,
+        "total_lines_added": 29909,
+        "total_lines_removed": 2336
+      },
+      "context_window": {
+        "total_input_tokens": 13788194,
+        "total_output_tokens": 704430,
+        "context_window_size": 200000,
+        "current_usage": {
+          "input_tokens": 1182,
+          "output_tokens": 150,
+          "cache_creation_input_tokens": 0,
+          "cache_read_input_tokens": 153164
+        }
+      },
+      "exceeds_200k_tokens": false
+    },
+    "status_line_output": "\u001b[36m[glm-4.6]\u001b[0m \u001b[90m\ud83d\udcad No session data\u001b[0m"
+  },
+  {
+    "timestamp": "2026-01-03T19:45:12.878500",
+    "input_data": {
+      "session_id": "0bf77ac9-0b22-44f0-a2c6-0e1c8c9ecc47",
+      "transcript_path": "/Users/urirozen_m4/.claude/projects/-Users-urirozen-m4-projects-NurseBridge-prep/0bf77ac9-0b22-44f0-a2c6-0e1c8c9ecc47.jsonl",
+      "cwd": "/Users/urirozen_m4/projects/NurseBridge-prep/apps/youtube_downloader",
+      "model": {
+        "id": "glm-4.6",
+        "display_name": "glm-4.6"
+      },
+      "workspace": {
+        "current_dir": "/Users/urirozen_m4/projects/NurseBridge-prep/apps/youtube_downloader",
+        "project_dir": "/Users/urirozen_m4/projects/NurseBridge-prep"
+      },
+      "version": "2.0.76",
+      "output_style": {
+        "name": "default"
+      },
+      "cost": {
+        "total_cost_usd": 93.18597810000018,
+        "total_duration_ms": 130939343,
+        "total_api_duration_ms": 19325935,
+        "total_lines_added": 29909,
+        "total_lines_removed": 2336
+      },
+      "context_window": {
+        "total_input_tokens": 13788344,
+        "total_output_tokens": 704470,
+        "context_window_size": 200000,
+        "current_usage": {
+          "input_tokens": 0,
+          "output_tokens": 0,
+          "cache_creation_input_tokens": 0,
+          "cache_read_input_tokens": 0
+        }
+      },
+      "exceeds_200k_tokens": false
+    },
+    "status_line_output": "[glm-4.6] \ud83d\udcad No session data",
+    "error": "Session file .claude/data/sessions/0bf77ac9-0b22-44f0-a2c6-0e1c8c9ecc47.json does not exist"
+  },
+  {
+    "timestamp": "2026-01-03T19:45:12.880750",
+    "input_data": {
+      "session_id": "0bf77ac9-0b22-44f0-a2c6-0e1c8c9ecc47",
+      "transcript_path": "/Users/urirozen_m4/.claude/projects/-Users-urirozen-m4-projects-NurseBridge-prep/0bf77ac9-0b22-44f0-a2c6-0e1c8c9ecc47.jsonl",
+      "cwd": "/Users/urirozen_m4/projects/NurseBridge-prep/apps/youtube_downloader",
+      "model": {
+        "id": "glm-4.6",
+        "display_name": "glm-4.6"
+      },
+      "workspace": {
+        "current_dir": "/Users/urirozen_m4/projects/NurseBridge-prep/apps/youtube_downloader",
+        "project_dir": "/Users/urirozen_m4/projects/NurseBridge-prep"
+      },
+      "version": "2.0.76",
+      "output_style": {
+        "name": "default"
+      },
+      "cost": {
+        "total_cost_usd": 93.18597810000018,
+        "total_duration_ms": 130939343,
+        "total_api_duration_ms": 19325935,
+        "total_lines_added": 29909,
+        "total_lines_removed": 2336
+      },
+      "context_window": {
+        "total_input_tokens": 13788344,
+        "total_output_tokens": 704470,
+        "context_window_size": 200000,
+        "current_usage": {
+          "input_tokens": 0,
+          "output_tokens": 0,
+          "cache_creation_input_tokens": 0,
+          "cache_read_input_tokens": 0
+        }
+      },
+      "exceeds_200k_tokens": false
+    },
+    "status_line_output": "\u001b[36m[glm-4.6]\u001b[0m \u001b[90m\ud83d\udcad No session data\u001b[0m"
+  },
+  {
+    "timestamp": "2026-01-03T19:45:15.300716",
+    "input_data": {
+      "session_id": "0bf77ac9-0b22-44f0-a2c6-0e1c8c9ecc47",
+      "transcript_path": "/Users/urirozen_m4/.claude/projects/-Users-urirozen-m4-projects-NurseBridge-prep/0bf77ac9-0b22-44f0-a2c6-0e1c8c9ecc47.jsonl",
+      "cwd": "/Users/urirozen_m4/projects/NurseBridge-prep/apps/youtube_downloader",
+      "model": {
+        "id": "glm-4.6",
+        "display_name": "glm-4.6"
+      },
+      "workspace": {
+        "current_dir": "/Users/urirozen_m4/projects/NurseBridge-prep/apps/youtube_downloader",
+        "project_dir": "/Users/urirozen_m4/projects/NurseBridge-prep"
+      },
+      "version": "2.0.76",
+      "output_style": {
+        "name": "default"
+      },
+      "cost": {
+        "total_cost_usd": 93.23916060000019,
+        "total_duration_ms": 130941790,
+        "total_api_duration_ms": 19359396,
+        "total_lines_added": 29909,
+        "total_lines_removed": 2336
+      },
+      "context_window": {
+        "total_input_tokens": 13788542,
+        "total_output_tokens": 704889,
+        "context_window_size": 200000,
+        "current_usage": {
+          "input_tokens": 198,
+          "output_tokens": 419,
+          "cache_creation_input_tokens": 0,
+          "cache_read_input_tokens": 154345
+        }
+      },
+      "exceeds_200k_tokens": false
+    },
+    "status_line_output": "[glm-4.6] \ud83d\udcad No session data",
+    "error": "Session file .claude/data/sessions/0bf77ac9-0b22-44f0-a2c6-0e1c8c9ecc47.json does not exist"
+  },
+  {
+    "timestamp": "2026-01-03T19:45:15.301536",
+    "input_data": {
+      "session_id": "0bf77ac9-0b22-44f0-a2c6-0e1c8c9ecc47",
+      "transcript_path": "/Users/urirozen_m4/.claude/projects/-Users-urirozen-m4-projects-NurseBridge-prep/0bf77ac9-0b22-44f0-a2c6-0e1c8c9ecc47.jsonl",
+      "cwd": "/Users/urirozen_m4/projects/NurseBridge-prep/apps/youtube_downloader",
+      "model": {
+        "id": "glm-4.6",
+        "display_name": "glm-4.6"
+      },
+      "workspace": {
+        "current_dir": "/Users/urirozen_m4/projects/NurseBridge-prep/apps/youtube_downloader",
+        "project_dir": "/Users/urirozen_m4/projects/NurseBridge-prep"
+      },
+      "version": "2.0.76",
+      "output_style": {
+        "name": "default"
+      },
+      "cost": {
+        "total_cost_usd": 93.23916060000019,
+        "total_duration_ms": 130941790,
+        "total_api_duration_ms": 19359396,
+        "total_lines_added": 29909,
+        "total_lines_removed": 2336
+      },
+      "context_window": {
+        "total_input_tokens": 13788542,
+        "total_output_tokens": 704889,
+        "context_window_size": 200000,
+        "current_usage": {
+          "input_tokens": 198,
+          "output_tokens": 419,
+          "cache_creation_input_tokens": 0,
+          "cache_read_input_tokens": 154345
+        }
+      },
+      "exceeds_200k_tokens": false
+    },
+    "status_line_output": "\u001b[36m[glm-4.6]\u001b[0m \u001b[90m\ud83d\udcad No session data\u001b[0m"
+  },
+  {
+    "timestamp": "2026-01-03T19:45:37.449814",
+    "input_data": {
+      "session_id": "0bf77ac9-0b22-44f0-a2c6-0e1c8c9ecc47",
+      "transcript_path": "/Users/urirozen_m4/.claude/projects/-Users-urirozen-m4-projects-NurseBridge-prep/0bf77ac9-0b22-44f0-a2c6-0e1c8c9ecc47.jsonl",
+      "cwd": "/Users/urirozen_m4/projects/NurseBridge-prep/apps/youtube_downloader",
+      "model": {
+        "id": "glm-4.6",
+        "display_name": "glm-4.6"
+      },
+      "workspace": {
+        "current_dir": "/Users/urirozen_m4/projects/NurseBridge-prep/apps/youtube_downloader",
+        "project_dir": "/Users/urirozen_m4/projects/NurseBridge-prep"
+      },
+      "version": "2.0.76",
+      "output_style": {
+        "name": "default"
+      },
+      "cost": {
+        "total_cost_usd": 93.24109140000019,
+        "total_duration_ms": 130963949,
+        "total_api_duration_ms": 19361560,
+        "total_lines_added": 29909,
+        "total_lines_removed": 2336
+      },
+      "context_window": {
+        "total_input_tokens": 13788942,
+        "total_output_tokens": 704929,
+        "context_window_size": 200000,
+        "current_usage": {
+          "input_tokens": 0,
+          "output_tokens": 0,
+          "cache_creation_input_tokens": 0,
+          "cache_read_input_tokens": 0
+        }
+      },
+      "exceeds_200k_tokens": false
+    },
+    "status_line_output": "[glm-4.6] \ud83d\udcad No session data",
+    "error": "Session file .claude/data/sessions/0bf77ac9-0b22-44f0-a2c6-0e1c8c9ecc47.json does not exist"
+  },
+  {
+    "timestamp": "2026-01-03T19:45:37.450528",
+    "input_data": {
+      "session_id": "0bf77ac9-0b22-44f0-a2c6-0e1c8c9ecc47",
+      "transcript_path": "/Users/urirozen_m4/.claude/projects/-Users-urirozen-m4-projects-NurseBridge-prep/0bf77ac9-0b22-44f0-a2c6-0e1c8c9ecc47.jsonl",
+      "cwd": "/Users/urirozen_m4/projects/NurseBridge-prep/apps/youtube_downloader",
+      "model": {
+        "id": "glm-4.6",
+        "display_name": "glm-4.6"
+      },
+      "workspace": {
+        "current_dir": "/Users/urirozen_m4/projects/NurseBridge-prep/apps/youtube_downloader",
+        "project_dir": "/Users/urirozen_m4/projects/NurseBridge-prep"
+      },
+      "version": "2.0.76",
+      "output_style": {
+        "name": "default"
+      },
+      "cost": {
+        "total_cost_usd": 93.24109140000019,
+        "total_duration_ms": 130963949,
+        "total_api_duration_ms": 19361560,
+        "total_lines_added": 29909,
+        "total_lines_removed": 2336
+      },
+      "context_window": {
+        "total_input_tokens": 13788942,
+        "total_output_tokens": 704929,
+        "context_window_size": 200000,
+        "current_usage": {
+          "input_tokens": 0,
+          "output_tokens": 0,
+          "cache_creation_input_tokens": 0,
+          "cache_read_input_tokens": 0
+        }
+      },
+      "exceeds_200k_tokens": false
+    },
+    "status_line_output": "\u001b[36m[glm-4.6]\u001b[0m \u001b[90m\ud83d\udcad No session data\u001b[0m"
+  },
+  {
+    "timestamp": "2026-01-03T19:45:40.093380",
+    "input_data": {
+      "session_id": "0bf77ac9-0b22-44f0-a2c6-0e1c8c9ecc47",
+      "transcript_path": "/Users/urirozen_m4/.claude/projects/-Users-urirozen-m4-projects-NurseBridge-prep/0bf77ac9-0b22-44f0-a2c6-0e1c8c9ecc47.jsonl",
+      "cwd": "/Users/urirozen_m4/projects/NurseBridge-prep/apps/youtube_downloader",
+      "model": {
+        "id": "glm-4.6",
+        "display_name": "glm-4.6"
+      },
+      "workspace": {
+        "current_dir": "/Users/urirozen_m4/projects/NurseBridge-prep/apps/youtube_downloader",
+        "project_dir": "/Users/urirozen_m4/projects/NurseBridge-prep"
+      },
+      "version": "2.0.76",
+      "output_style": {
+        "name": "default"
+      },
+      "cost": {
+        "total_cost_usd": 93.29513400000019,
+        "total_duration_ms": 130966571,
+        "total_api_duration_ms": 19375154,
+        "total_lines_added": 29909,
+        "total_lines_removed": 2336
+      },
+      "context_window": {
+        "total_input_tokens": 13790012,
+        "total_output_tokens": 705227,
+        "context_window_size": 200000,
+        "current_usage": {
+          "input_tokens": 1070,
+          "output_tokens": 298,
+          "cache_creation_input_tokens": 0,
+          "cache_read_input_tokens": 154542
+        }
+      },
+      "exceeds_200k_tokens": false
+    },
+    "status_line_output": "[glm-4.6] \ud83d\udcad No session data",
+    "error": "Session file .claude/data/sessions/0bf77ac9-0b22-44f0-a2c6-0e1c8c9ecc47.json does not exist"
+  },
+  {
+    "timestamp": "2026-01-03T19:45:40.095044",
+    "input_data": {
+      "session_id": "0bf77ac9-0b22-44f0-a2c6-0e1c8c9ecc47",
+      "transcript_path": "/Users/urirozen_m4/.claude/projects/-Users-urirozen-m4-projects-NurseBridge-prep/0bf77ac9-0b22-44f0-a2c6-0e1c8c9ecc47.jsonl",
+      "cwd": "/Users/urirozen_m4/projects/NurseBridge-prep/apps/youtube_downloader",
+      "model": {
+        "id": "glm-4.6",
+        "display_name": "glm-4.6"
+      },
+      "workspace": {
+        "current_dir": "/Users/urirozen_m4/projects/NurseBridge-prep/apps/youtube_downloader",
+        "project_dir": "/Users/urirozen_m4/projects/NurseBridge-prep"
+      },
+      "version": "2.0.76",
+      "output_style": {
+        "name": "default"
+      },
+      "cost": {
+        "total_cost_usd": 93.29513400000019,
+        "total_duration_ms": 130966571,
+        "total_api_duration_ms": 19375154,
+        "total_lines_added": 29909,
+        "total_lines_removed": 2336
+      },
+      "context_window": {
+        "total_input_tokens": 13790012,
+        "total_output_tokens": 705227,
+        "context_window_size": 200000,
+        "current_usage": {
+          "input_tokens": 1070,
+          "output_tokens": 298,
+          "cache_creation_input_tokens": 0,
+          "cache_read_input_tokens": 154542
+        }
+      },
+      "exceeds_200k_tokens": false
+    },
+    "status_line_output": "\u001b[36m[glm-4.6]\u001b[0m \u001b[90m\ud83d\udcad No session data\u001b[0m"
+  },
+  {
+    "timestamp": "2026-01-03T19:47:15.409891",
+    "input_data": {
+      "session_id": "0bf77ac9-0b22-44f0-a2c6-0e1c8c9ecc47",
+      "transcript_path": "/Users/urirozen_m4/.claude/projects/-Users-urirozen-m4-projects-NurseBridge-prep/0bf77ac9-0b22-44f0-a2c6-0e1c8c9ecc47.jsonl",
+      "cwd": "/Users/urirozen_m4/projects/NurseBridge-prep/apps/youtube_downloader",
+      "model": {
+        "id": "glm-4.6",
+        "display_name": "glm-4.6"
+      },
+      "workspace": {
+        "current_dir": "/Users/urirozen_m4/projects/NurseBridge-prep/apps/youtube_downloader",
+        "project_dir": "/Users/urirozen_m4/projects/NurseBridge-prep"
+      },
+      "version": "2.0.76",
+      "output_style": {
+        "name": "default"
+      },
+      "cost": {
+        "total_cost_usd": 93.70313700000018,
+        "total_duration_ms": 131061896,
+        "total_api_duration_ms": 19451870,
+        "total_lines_added": 29909,
+        "total_lines_removed": 2336
+      },
+      "context_window": {
+        "total_input_tokens": 13905799,
+        "total_output_tokens": 709248,
+        "context_window_size": 200000,
+        "current_usage": {
+          "input_tokens": 0,
+          "output_tokens": 0,
+          "cache_creation_input_tokens": 0,
+          "cache_read_input_tokens": 0
+        }
+      },
+      "exceeds_200k_tokens": false
+    },
+    "status_line_output": "[glm-4.6] \ud83d\udcad No session data",
+    "error": "Session file .claude/data/sessions/0bf77ac9-0b22-44f0-a2c6-0e1c8c9ecc47.json does not exist"
+  },
+  {
+    "timestamp": "2026-01-03T19:47:15.410751",
+    "input_data": {
+      "session_id": "0bf77ac9-0b22-44f0-a2c6-0e1c8c9ecc47",
+      "transcript_path": "/Users/urirozen_m4/.claude/projects/-Users-urirozen-m4-projects-NurseBridge-prep/0bf77ac9-0b22-44f0-a2c6-0e1c8c9ecc47.jsonl",
+      "cwd": "/Users/urirozen_m4/projects/NurseBridge-prep/apps/youtube_downloader",
+      "model": {
+        "id": "glm-4.6",
+        "display_name": "glm-4.6"
+      },
+      "workspace": {
+        "current_dir": "/Users/urirozen_m4/projects/NurseBridge-prep/apps/youtube_downloader",
+        "project_dir": "/Users/urirozen_m4/projects/NurseBridge-prep"
+      },
+      "version": "2.0.76",
+      "output_style": {
+        "name": "default"
+      },
+      "cost": {
+        "total_cost_usd": 93.70313700000018,
+        "total_duration_ms": 131061896,
+        "total_api_duration_ms": 19451870,
+        "total_lines_added": 29909,
+        "total_lines_removed": 2336
+      },
+      "context_window": {
+        "total_input_tokens": 13905799,
+        "total_output_tokens": 709248,
+        "context_window_size": 200000,
+        "current_usage": {
+          "input_tokens": 0,
+          "output_tokens": 0,
+          "cache_creation_input_tokens": 0,
+          "cache_read_input_tokens": 0
+        }
+      },
+      "exceeds_200k_tokens": false
+    },
+    "status_line_output": "\u001b[36m[glm-4.6]\u001b[0m \u001b[90m\ud83d\udcad No session data\u001b[0m"
+  },
+  {
+    "timestamp": "2026-01-03T19:47:21.941525",
+    "input_data": {
+      "session_id": "0bf77ac9-0b22-44f0-a2c6-0e1c8c9ecc47",
+      "transcript_path": "/Users/urirozen_m4/.claude/projects/-Users-urirozen-m4-projects-NurseBridge-prep/0bf77ac9-0b22-44f0-a2c6-0e1c8c9ecc47.jsonl",
+      "cwd": "/Users/urirozen_m4/projects/NurseBridge-prep/apps/youtube_downloader",
+      "model": {
+        "id": "glm-4.6",
+        "display_name": "glm-4.6"
+      },
+      "workspace": {
+        "current_dir": "/Users/urirozen_m4/projects/NurseBridge-prep/apps/youtube_downloader",
+        "project_dir": "/Users/urirozen_m4/projects/NurseBridge-prep"
+      },
+      "version": "2.0.76",
+      "output_style": {
+        "name": "default"
+      },
+      "cost": {
+        "total_cost_usd": 93.79030680000018,
+        "total_duration_ms": 131068317,
+        "total_api_duration_ms": 19472132,
+        "total_lines_added": 29909,
+        "total_lines_removed": 2336
+      },
+      "context_window": {
+        "total_input_tokens": 13926907,
+        "total_output_tokens": 710234,
+        "context_window_size": 200000,
+        "current_usage": {
+          "input_tokens": 21108,
+          "output_tokens": 986,
+          "cache_creation_input_tokens": 0,
+          "cache_read_input_tokens": 30186
+        }
+      },
+      "exceeds_200k_tokens": false
+    },
+    "status_line_output": "[glm-4.6] \ud83d\udcad No session data",
+    "error": "Session file .claude/data/sessions/0bf77ac9-0b22-44f0-a2c6-0e1c8c9ecc47.json does not exist"
+  },
+  {
+    "timestamp": "2026-01-03T19:47:21.943985",
+    "input_data": {
+      "session_id": "0bf77ac9-0b22-44f0-a2c6-0e1c8c9ecc47",
+      "transcript_path": "/Users/urirozen_m4/.claude/projects/-Users-urirozen-m4-projects-NurseBridge-prep/0bf77ac9-0b22-44f0-a2c6-0e1c8c9ecc47.jsonl",
+      "cwd": "/Users/urirozen_m4/projects/NurseBridge-prep/apps/youtube_downloader",
+      "model": {
+        "id": "glm-4.6",
+        "display_name": "glm-4.6"
+      },
+      "workspace": {
+        "current_dir": "/Users/urirozen_m4/projects/NurseBridge-prep/apps/youtube_downloader",
+        "project_dir": "/Users/urirozen_m4/projects/NurseBridge-prep"
+      },
+      "version": "2.0.76",
+      "output_style": {
+        "name": "default"
+      },
+      "cost": {
+        "total_cost_usd": 93.79030680000018,
+        "total_duration_ms": 131068317,
+        "total_api_duration_ms": 19472132,
+        "total_lines_added": 29909,
+        "total_lines_removed": 2336
+      },
+      "context_window": {
+        "total_input_tokens": 13926907,
+        "total_output_tokens": 710234,
+        "context_window_size": 200000,
+        "current_usage": {
+          "input_tokens": 21108,
+          "output_tokens": 986,
+          "cache_creation_input_tokens": 0,
+          "cache_read_input_tokens": 30186
+        }
+      },
+      "exceeds_200k_tokens": false
+    },
+    "status_line_output": "\u001b[36m[glm-4.6]\u001b[0m \u001b[90m\ud83d\udcad No session data\u001b[0m"
+  },
+  {
+    "timestamp": "2026-01-05T18:01:02.850570",
+    "input_data": {
+      "session_id": "0bf77ac9-0b22-44f0-a2c6-0e1c8c9ecc47",
+      "transcript_path": "/Users/urirozen_m4/.claude/projects/-Users-urirozen-m4-projects-NurseBridge-prep/0bf77ac9-0b22-44f0-a2c6-0e1c8c9ecc47.jsonl",
+      "cwd": "/Users/urirozen_m4/projects/NurseBridge-prep/apps/youtube_downloader",
+      "model": {
+        "id": "glm-4.6",
+        "display_name": "glm-4.6"
+      },
+      "workspace": {
+        "current_dir": "/Users/urirozen_m4/projects/NurseBridge-prep/apps/youtube_downloader",
+        "project_dir": "/Users/urirozen_m4/projects/NurseBridge-prep"
+      },
+      "version": "2.0.76",
+      "output_style": {
+        "name": "default"
+      },
+      "cost": {
+        "total_cost_usd": 93.81493560000018,
+        "total_duration_ms": 297489350,
+        "total_api_duration_ms": 19483139,
+        "total_lines_added": 29909,
+        "total_lines_removed": 2336
+      },
+      "context_window": {
+        "total_input_tokens": 13928031,
+        "total_output_tokens": 710622,
+        "context_window_size": 200000,
+        "current_usage": {
+          "input_tokens": 0,
+          "output_tokens": 0,
+          "cache_creation_input_tokens": 0,
+          "cache_read_input_tokens": 0
+        }
+      },
+      "exceeds_200k_tokens": false
+    },
+    "status_line_output": "[glm-4.6] \ud83d\udcad No session data",
+    "error": "Session file .claude/data/sessions/0bf77ac9-0b22-44f0-a2c6-0e1c8c9ecc47.json does not exist"
+  },
+  {
+    "timestamp": "2026-01-05T18:01:02.851471",
+    "input_data": {
+      "session_id": "0bf77ac9-0b22-44f0-a2c6-0e1c8c9ecc47",
+      "transcript_path": "/Users/urirozen_m4/.claude/projects/-Users-urirozen-m4-projects-NurseBridge-prep/0bf77ac9-0b22-44f0-a2c6-0e1c8c9ecc47.jsonl",
+      "cwd": "/Users/urirozen_m4/projects/NurseBridge-prep/apps/youtube_downloader",
+      "model": {
+        "id": "glm-4.6",
+        "display_name": "glm-4.6"
+      },
+      "workspace": {
+        "current_dir": "/Users/urirozen_m4/projects/NurseBridge-prep/apps/youtube_downloader",
+        "project_dir": "/Users/urirozen_m4/projects/NurseBridge-prep"
+      },
+      "version": "2.0.76",
+      "output_style": {
+        "name": "default"
+      },
+      "cost": {
+        "total_cost_usd": 93.81493560000018,
+        "total_duration_ms": 297489350,
+        "total_api_duration_ms": 19483139,
+        "total_lines_added": 29909,
+        "total_lines_removed": 2336
+      },
+      "context_window": {
+        "total_input_tokens": 13928031,
+        "total_output_tokens": 710622,
+        "context_window_size": 200000,
+        "current_usage": {
+          "input_tokens": 0,
+          "output_tokens": 0,
+          "cache_creation_input_tokens": 0,
+          "cache_read_input_tokens": 0
+        }
+      },
+      "exceeds_200k_tokens": false
+    },
+    "status_line_output": "\u001b[36m[glm-4.6]\u001b[0m \u001b[90m\ud83d\udcad No session data\u001b[0m"
+  },
+  {
+    "timestamp": "2026-01-05T18:01:03.198928",
+    "input_data": {
+      "session_id": "0bf77ac9-0b22-44f0-a2c6-0e1c8c9ecc47",
+      "transcript_path": "/Users/urirozen_m4/.claude/projects/-Users-urirozen-m4-projects-NurseBridge-prep/0bf77ac9-0b22-44f0-a2c6-0e1c8c9ecc47.jsonl",
+      "cwd": "/Users/urirozen_m4/projects/NurseBridge-prep/apps/youtube_downloader",
+      "model": {
+        "id": "glm-4.6",
+        "display_name": "glm-4.6"
+      },
+      "workspace": {
+        "current_dir": "/Users/urirozen_m4/projects/NurseBridge-prep/apps/youtube_downloader",
+        "project_dir": "/Users/urirozen_m4/projects/NurseBridge-prep"
+      },
+      "version": "2.0.76",
+      "output_style": {
+        "name": "default"
+      },
+      "cost": {
+        "total_cost_usd": 93.97829790000019,
+        "total_duration_ms": 297489708,
+        "total_api_duration_ms": 19502691,
+        "total_lines_added": 29909,
+        "total_lines_removed": 2336
+      },
+      "context_window": {
+        "total_input_tokens": 13980375,
+        "total_output_tokens": 711034,
+        "context_window_size": 200000,
+        "current_usage": {
+          "input_tokens": 52344,
+          "output_tokens": 412,
+          "cache_creation_input_tokens": 0,
+          "cache_read_input_tokens": 501
+        }
+      },
+      "exceeds_200k_tokens": false
+    },
+    "status_line_output": "[glm-4.6] \ud83d\udcad No session data",
+    "error": "Session file .claude/data/sessions/0bf77ac9-0b22-44f0-a2c6-0e1c8c9ecc47.json does not exist"
+  },
+  {
+    "timestamp": "2026-01-05T18:01:03.200021",
+    "input_data": {
+      "session_id": "0bf77ac9-0b22-44f0-a2c6-0e1c8c9ecc47",
+      "transcript_path": "/Users/urirozen_m4/.claude/projects/-Users-urirozen-m4-projects-NurseBridge-prep/0bf77ac9-0b22-44f0-a2c6-0e1c8c9ecc47.jsonl",
+      "cwd": "/Users/urirozen_m4/projects/NurseBridge-prep/apps/youtube_downloader",
+      "model": {
+        "id": "glm-4.6",
+        "display_name": "glm-4.6"
+      },
+      "workspace": {
+        "current_dir": "/Users/urirozen_m4/projects/NurseBridge-prep/apps/youtube_downloader",
+        "project_dir": "/Users/urirozen_m4/projects/NurseBridge-prep"
+      },
+      "version": "2.0.76",
+      "output_style": {
+        "name": "default"
+      },
+      "cost": {
+        "total_cost_usd": 93.97829790000019,
+        "total_duration_ms": 297489708,
+        "total_api_duration_ms": 19502691,
+        "total_lines_added": 29909,
+        "total_lines_removed": 2336
+      },
+      "context_window": {
+        "total_input_tokens": 13980375,
+        "total_output_tokens": 711034,
+        "context_window_size": 200000,
+        "current_usage": {
+          "input_tokens": 52344,
+          "output_tokens": 412,
+          "cache_creation_input_tokens": 0,
+          "cache_read_input_tokens": 501
+        }
+      },
+      "exceeds_200k_tokens": false
+    },
+    "status_line_output": "\u001b[36m[glm-4.6]\u001b[0m \u001b[90m\ud83d\udcad No session data\u001b[0m"
+  },
+  {
+    "timestamp": "2026-01-06T11:24:07.828246",
+    "input_data": {
+      "session_id": "6c893250-bd05-4e90-b458-038c6722a721",
+      "transcript_path": "/Users/urirozen_m4/.claude/projects/-Users-urirozen-m4-projects-NurseBridge-prep/6c893250-bd05-4e90-b458-038c6722a721.jsonl",
+      "cwd": "/Users/urirozen_m4/projects/NurseBridge-prep/apps/youtube_downloader",
+      "model": {
+        "id": "glm-4.7",
+        "display_name": "glm-4.7"
+      },
+      "workspace": {
+        "current_dir": "/Users/urirozen_m4/projects/NurseBridge-prep/apps/youtube_downloader",
+        "project_dir": "/Users/urirozen_m4/projects/NurseBridge-prep"
+      },
+      "version": "2.0.76",
+      "output_style": {
+        "name": "default"
+      },
+      "cost": {
+        "total_cost_usd": 2.2390689000000004,
+        "total_duration_ms": 599762,
+        "total_api_duration_ms": 805090,
+        "total_lines_added": 298,
+        "total_lines_removed": 15
+      },
+      "context_window": {
+        "total_input_tokens": 466407,
+        "total_output_tokens": 11437,
+        "context_window_size": 200000,
+        "current_usage": {
+          "input_tokens": 67965,
+          "output_tokens": 90,
+          "cache_creation_input_tokens": 0,
+          "cache_read_input_tokens": 15744
+        }
+      },
+      "exceeds_200k_tokens": false
+    },
+    "status_line_output": "[glm-4.7] \ud83d\udcad No session data",
+    "error": "Session file .claude/data/sessions/6c893250-bd05-4e90-b458-038c6722a721.json does not exist"
+  },
+  {
+    "timestamp": "2026-01-06T11:24:07.829633",
+    "input_data": {
+      "session_id": "6c893250-bd05-4e90-b458-038c6722a721",
+      "transcript_path": "/Users/urirozen_m4/.claude/projects/-Users-urirozen-m4-projects-NurseBridge-prep/6c893250-bd05-4e90-b458-038c6722a721.jsonl",
+      "cwd": "/Users/urirozen_m4/projects/NurseBridge-prep/apps/youtube_downloader",
+      "model": {
+        "id": "glm-4.7",
+        "display_name": "glm-4.7"
+      },
+      "workspace": {
+        "current_dir": "/Users/urirozen_m4/projects/NurseBridge-prep/apps/youtube_downloader",
+        "project_dir": "/Users/urirozen_m4/projects/NurseBridge-prep"
+      },
+      "version": "2.0.76",
+      "output_style": {
+        "name": "default"
+      },
+      "cost": {
+        "total_cost_usd": 2.2390689000000004,
+        "total_duration_ms": 599762,
+        "total_api_duration_ms": 805090,
+        "total_lines_added": 298,
+        "total_lines_removed": 15
+      },
+      "context_window": {
+        "total_input_tokens": 466407,
+        "total_output_tokens": 11437,
+        "context_window_size": 200000,
+        "current_usage": {
+          "input_tokens": 67965,
+          "output_tokens": 90,
+          "cache_creation_input_tokens": 0,
+          "cache_read_input_tokens": 15744
+        }
+      },
+      "exceeds_200k_tokens": false
+    },
+    "status_line_output": "\u001b[36m[glm-4.7]\u001b[0m \u001b[90m\ud83d\udcad No session data\u001b[0m"
+  },
+  {
+    "timestamp": "2026-01-06T11:24:14.805696",
+    "input_data": {
+      "session_id": "6c893250-bd05-4e90-b458-038c6722a721",
+      "transcript_path": "/Users/urirozen_m4/.claude/projects/-Users-urirozen-m4-projects-NurseBridge-prep/6c893250-bd05-4e90-b458-038c6722a721.jsonl",
+      "cwd": "/Users/urirozen_m4/projects/NurseBridge-prep/apps/youtube_downloader",
+      "model": {
+        "id": "glm-4.7",
+        "display_name": "glm-4.7"
+      },
+      "workspace": {
+        "current_dir": "/Users/urirozen_m4/projects/NurseBridge-prep/apps/youtube_downloader",
+        "project_dir": "/Users/urirozen_m4/projects/NurseBridge-prep"
+      },
+      "version": "2.0.76",
+      "output_style": {
+        "name": "default"
+      },
+      "cost": {
+        "total_cost_usd": 2.2714629000000004,
+        "total_duration_ms": 606748,
+        "total_api_duration_ms": 814109,
+        "total_lines_added": 303,
+        "total_lines_removed": 16
+      },
+      "context_window": {
+        "total_input_tokens": 467161,
+        "total_output_tokens": 11763,
+        "context_window_size": 200000,
+        "current_usage": {
+          "input_tokens": 382,
+          "output_tokens": 239,
+          "cache_creation_input_tokens": 0,
+          "cache_read_input_tokens": 83712
+        }
+      },
+      "exceeds_200k_tokens": false
+    },
+    "status_line_output": "[glm-4.7] \ud83d\udcad No session data",
+    "error": "Session file .claude/data/sessions/6c893250-bd05-4e90-b458-038c6722a721.json does not exist"
+  },
+  {
+    "timestamp": "2026-01-06T11:24:14.806855",
+    "input_data": {
+      "session_id": "6c893250-bd05-4e90-b458-038c6722a721",
+      "transcript_path": "/Users/urirozen_m4/.claude/projects/-Users-urirozen-m4-projects-NurseBridge-prep/6c893250-bd05-4e90-b458-038c6722a721.jsonl",
+      "cwd": "/Users/urirozen_m4/projects/NurseBridge-prep/apps/youtube_downloader",
+      "model": {
+        "id": "glm-4.7",
+        "display_name": "glm-4.7"
+      },
+      "workspace": {
+        "current_dir": "/Users/urirozen_m4/projects/NurseBridge-prep/apps/youtube_downloader",
+        "project_dir": "/Users/urirozen_m4/projects/NurseBridge-prep"
+      },
+      "version": "2.0.76",
+      "output_style": {
+        "name": "default"
+      },
+      "cost": {
+        "total_cost_usd": 2.2714629000000004,
+        "total_duration_ms": 606748,
+        "total_api_duration_ms": 814109,
+        "total_lines_added": 303,
+        "total_lines_removed": 16
+      },
+      "context_window": {
+        "total_input_tokens": 467161,
+        "total_output_tokens": 11763,
+        "context_window_size": 200000,
+        "current_usage": {
+          "input_tokens": 382,
+          "output_tokens": 239,
+          "cache_creation_input_tokens": 0,
+          "cache_read_input_tokens": 83712
+        }
+      },
+      "exceeds_200k_tokens": false
+    },
+    "status_line_output": "\u001b[36m[glm-4.7]\u001b[0m \u001b[90m\ud83d\udcad No session data\u001b[0m"
+  }
+]
