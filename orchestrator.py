@@ -136,8 +136,15 @@ Examples:
         action="store_true",
         help="Skip confirmation prompts"
     )
+    parser.add_argument(
+        "--fetch-mode",
+        choices=["proxy_then_direct", "proxy_only", "direct_only"],
+        default=os.getenv("TRANSCRIPT_FETCH_MODE", "proxy_then_direct"),
+        help="Transcript fetch strategy (default: TRANSCRIPT_FETCH_MODE env or proxy_then_direct)"
+    )
     
     args = parser.parse_args()
+    os.environ["TRANSCRIPT_FETCH_MODE"] = args.fetch_mode
     
     # 1) Resolve channel from input
     print(f"\n🔍 Resolving channel: {args.input}")
@@ -211,13 +218,18 @@ Examples:
     if is_blocked:
         print(f"⚠️  IP is currently BLOCKED by YouTube!")
         print(f"   Error: {block_message[:200]}...")
-        print(f"\n💡 Recommendation: Wait 1-2 hours before retrying.")
-        print(f"   The system will automatically retry with backoff, but it's better to wait.")
-        response = input("\nContinue anyway? (y/N): ").strip().lower()
-        if response != 'y':
-            print("Aborted. Please wait and try again later.")
-            sys.exit(1)
-        print("Continuing with automatic retry logic...")
+        if args.fetch_mode == "proxy_only":
+            print("\nℹ️  Continuing because fetch mode is proxy_only.")
+        elif args.yes:
+            print("\nℹ️  Continuing because --yes was provided.")
+        else:
+            print(f"\n💡 Recommendation: Wait 1-2 hours before retrying.")
+            print(f"   The system will automatically retry with backoff, but it's better to wait.")
+            response = input("\nContinue anyway? (y/N): ").strip().lower()
+            if response != 'y':
+                print("Aborted. Please wait and try again later.")
+                sys.exit(1)
+            print("Continuing with automatic retry logic...")
     else:
         print(f"✅ IP is accessible - proceeding with downloads")
     
@@ -273,10 +285,6 @@ Examples:
             print(f"   ✓ Transcript fetched: source={source}, lang={lang}, length={len(text)} chars")
         else:
             print(f"   ✗ Transcript NOT available for {vid} (see warnings above for details)")
-            # Log the actual error - warnings should be visible
-            logging.basicConfig(level=logging.WARNING, format='%(levelname)s: %(message)s', force=True)
-            # Re-fetch with logging to see the error
-            text, source, lang = fetch_transcript_text(vid)
         
         if text:
             # Optional summarization

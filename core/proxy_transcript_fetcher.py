@@ -10,11 +10,12 @@ Uses:
 - Firecrawl (last resort)
 """
 
-import os
-import logging
+import html
 import json
+import logging
+import os
 import re
-from typing import Optional, Tuple
+from typing import Any, Optional, Tuple
 from dotenv import load_dotenv
 import requests
 
@@ -120,25 +121,28 @@ class ProxyTranscriptFetcherV3:
 
     def _scrape_with_scrapeninja(self, url: str) -> Optional[str]:
         """Scrape URL using ScrapeNinja API."""
-        api_url = "https://api.scrapeninja.net/v1/scrape"
+        # APIRoad endpoint is the stable path used in Scrapers-Hub.
+        api_url = "https://scrapeninja.apiroad.net/scrape"
 
         headers = {
-            'X-Api-Key': self.scrapeninja_key,
+            'X-Apiroad-Key': self.scrapeninja_key,
             'Content-Type': 'application/json'
         }
 
         payload = {
             'url': url,
-            'renderJs': True,
-            'waitForSelector': 'body',
-            'country': 'US'
+            'geo': 'us',
+            'retryNum': 2,
+            'blockImages': True,
+            'blockMedia': True,
+            'screenshot': 0
         }
 
         try:
             response = requests.post(api_url, headers=headers, json=payload, timeout=30)
             if response.status_code == 200:
                 data = response.json()
-                return data.get('content')
+                return data.get('body')
             else:
                 logger.error(f"ScrapeNinja error: {response.status_code} - {response.text[:200]}")
                 return None
@@ -218,7 +222,7 @@ class ProxyTranscriptFetcherV3:
 
         return None
 
-    def _find_transcript_url_recursive(self, obj: any, depth: int = 0) -> Optional[str]:
+    def _find_transcript_url_recursive(self, obj: Any, depth: int = 0) -> Optional[str]:
         """Recursively search for transcript URL in data structure."""
         if depth > 10:
             return None
@@ -252,7 +256,7 @@ class ProxyTranscriptFetcherV3:
                 matches = segment_pattern.findall(content)
 
                 if matches:
-                    segments = [text for _, _, text in matches]
+                    segments = [html.unescape(text) for _, _, text in matches]
                     transcript_text = "\n".join(segments)
                     # Clean up
                     transcript_text = re.sub(r'\n\s*\n', '\n', transcript_text)
