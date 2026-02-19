@@ -46,7 +46,10 @@ def fetch_transcript_text(video_id: str, languages: tuple = ('en', 'en-US', 'en-
 
             logger.info("Trying proxy fetcher for %s", video_id)
             fetcher = ProxyTranscriptFetcherV3()
-            text, source, lang = fetcher.fetch_transcript_sync(video_id)
+            text, source, lang = fetcher.fetch_transcript_sync(
+                video_id,
+                languages=languages,
+            )
 
             if text:
                 logger.info("Proxy transcript fetch succeeded for %s (%s)", video_id, source)
